@@ -9,7 +9,7 @@
   <!-- Cormorant Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet" />
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <!-- Bootstrap core CSS -->
@@ -90,26 +90,23 @@
   <main>
     <!-- About Me w/ photo, name, location, email, resume, link to portfolio -->
     <section id="about" class="container mt-5" data-aos="fade-in">
-      <h2 class="text-center mb-5">About</h2>
+      <h2 class="text-center mb-3">About</h2>
       <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <p class="about-text">I believe that an efficient, high quality website ... After pivoting my career to
+        <div class="col-md-10 offset-md-1">
+          <p class="about-text">I believe that an efficient, high quality website sets the standard for what clients
+            expect from your business. After pivoting my career to
             computer science and web development,
             I am motivated to use my skills to help others solve problems, communicate seamlessly, and build their
-            vision.
-            I have recently graduated with my Computer Programming Certificate and have been learning Web Development
-            through Udemy
-            courses, building personal and professional
-            websites, and reading documentation. After building experience through freelance and personal projects, I am
+            vision. I have gained experience through my Computer Programming Certificate from NC State as well as
+            freelance and personal projects, and now I am
             excited to contribute to an organization I belive in.
-            I have worked on a couple WordPress websites for UpWork clients,
-            volunteered
-            to redesign the website for Piedmont Legacy Trails, created a Spotify Web App for myself, deployed a
-            photography e-commerce website for a friend, and more.
+            My experience outside of classwork includes deploying a photography e-commerce website for a friend,
+            working on a couple WordPress websites for UpWork clients, volunteering to redesign the website for
+            Piedmont Legacy Trails, creating a Spotify Web App for myself, and more.
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#">
-              <button class="btn btn-lg btn-rounded btn-jo" data-toggle="modal">Download Resume</button>
+            <a href="./img/resume.pdf">
+              <button class="btn btn-lg btn-rounded btn-jo" data-toggle="modal">View Resume</button>
             </a>
 
           </div>
@@ -125,9 +122,8 @@
           <div class="card-header text-center bg-jo-dark">Front-End</div>
           <div class="card-body">
             <h5 class="card-title"><i class="fab fa-html5 mr-2"></i>HTML5</h5>
-            <h5 class="card-title"><i class="fab fa-css3-alt mr-2"></i>CSS3</h5>
+            <h5 class="card-title"><i class="fab fa-css3-alt mr-2"></i>CSS3 | Bootstrap</h5>
             <h5 class="card-title"><i class="fab fa-react mr-2"></i>JavaScript | React</h5>
-            <h5 class="card-title"><i class="fab fa-wordpress mr-2"></i>WordPress</h5>
           </div>
         </div>
         <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem;">
@@ -136,7 +132,6 @@
             <h5 class="card-title"><i class="fab fa-node-js mr-2"></i>Node.js | Express</h5>
             <h5 class="card-title"><i class="fab fa-python mr-2"></i>Python | Django</h5>
             <h5 class="card-title"><i class="fab fa-java mr-2"></i>Java | JUnit Testing</h5>
-            <h5 class="card-title"><i class="fab fa-wordpress mr-2"></i>WordPress</h5>
           </div>
         </div>
         <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem;">
@@ -144,14 +139,15 @@
           <div class="card-body">
             <h5 class="card-title"><i class="fab fa-deskpro mr-2"></i>PostgreSQL</h5>
             <h5 class="card-title"><i class="fas fa-database mr-2"></i>MongoDB</h5>
-            <h5 class="card-title"><i class="fab fa-digital-ocean mr-2"></i>Digital Ocean</h5>
+            <h5 class="card-title"><i class="fab fa-digital-ocean mr-2"></i>Digital Ocean | NGINX</h5>
             <h5 class="card-title"><i class="fas fa-rocket mr-2"></i>Heroku | Netlify | GitHub Pages</h5>
           </div>
         </div>
         <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem;">
-          <div class="card-header text-center bg-jo-dark">Other</div>
+          <div class="card-header text-center bg-jo-dark">Technologies</div>
           <div class="card-body">
             <h5 class="card-title"><i class="fab fa-github mr-2"></i>Git | GitHub</h5>
+            <h5 class="card-title"><i class="fab fa-wordpress mr-2"></i>WordPress</h5>
             <h5 class="card-title"><i class="fas fa-laptop-code mr-2"></i>VSCode</h5>
             <h5 class="card-title"><i class="fas fa-book-open mr-2"></i>Jupyter Notebook</h5>
             <h5 class="card-title"><i class="fas fa-table mr-2"></i>Tableau</h5>
@@ -164,6 +160,49 @@
     <section id="portfolio" class="container mt-5" data-aos="fade-in">
       <h2 class="text-center mb-5">Portfolio</h2>
       <div class="row">
+        <!-- BH Photography -->
+        <div class="col-md-4 mb-4">
+          <div class="modal fade" id="modalBKH" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fluid" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-7">
+                      <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><img src="./img/bh.png"
+                          width="100%" height="100%" style="position:absolute" />
+                      </div>
+                    </div>
+                    <div class="col-lg-5 d-flex justify-content-center">
+                      <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="card-title text-center">Brianna Haferman Photography</h2>
+                        <p class="card-text text-center">Photography e-commerce and portfolio website. Stripe is used to
+                          handle all
+                          credit card transactions.</p>
+                        <p class="card-text text-center">Technologies Used: Django | PostgreSQL | RaspberryPi | NGINX |
+                          GUnicorn |
+                          Stripe | Bootstrap
+                        </p>
+                        <a href="https://www.briannahaferman.com" target="_blank" rel="noopener noreferrer"
+                          class="btn btn-jo-bkh">View Website</a>
+                        <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view overlay">
+            <img src="./img/BH Photography 3x2.png" class="card-img-top" alt="">
+            <div class="mask flex-center flex-column rgba-white-strong">
+              <a>
+                <button class="btn btn-lg btn-rounded btn-jo-bkh" data-toggle="modal" data-target="#modalBKH">More
+                  Details</button>
+              </a>
+            </div>
+          </div>
+        </div>
         <!-- Spotify New Releases -->
         <div class="col-md-4 mb-4">
           <div class="modal fade" id="modalSpotify" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -210,49 +249,6 @@
               <a>
                 <button class="btn btn-lg btn-rounded btn-jo-spotify" data-toggle="modal"
                   data-target="#modalSpotify">More Details</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- BH Photography -->
-        <div class="col-md-4 mb-4">
-          <div class="modal fade" id="modalBKH" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><img src="./img/bh.png"
-                          width="100%" height="100%" style="position:absolute" />
-                      </div>
-                    </div>
-                    <div class="col-lg-5 d-flex justify-content-center">
-                      <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="card-title text-center">Brianna Haferman Photography</h2>
-                        <p class="card-text text-center">Photography e-commerce and portfolio website. Stripe is used to
-                          handle all
-                          credit card transactions.</p>
-                        <p class="card-text text-center">Technologies Used: Django | PostgreSQL | RaspberryPi | NGINX |
-                          GUnicorn |
-                          Stripe | Bootstrap
-                        </p>
-                        <a href="https://www.briannahaferman.com" target="_blank" rel="noopener noreferrer"
-                          class="btn btn-jo-bkh">View Website</a>
-                        <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="view overlay">
-            <img src="./img/BH Photography 3x2.png" class="card-img-top" alt="">
-            <div class="mask flex-center flex-column rgba-white-strong">
-              <a>
-                <button class="btn btn-lg btn-rounded btn-jo-bkh" data-toggle="modal" data-target="#modalBKH">More
-                  Details</button>
               </a>
             </div>
           </div>
