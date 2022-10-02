@@ -1,545 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Jason O'Dell</title>
+    <link rel="home" href="https://jeodell.github.io" />
+    <link rel="canonical" href="https://jeodell.github.io" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <meta name="description" content="Jason O'Dell, a Winston-Salem based web developer." />
+    <meta property="”og:type”" content="website" />
+    <meta property="”og:title”" content="Jason O'Dell" />
+    <meta property="”og:description”" content="Jason O'Dell, a Winston-Salem based web developer." />
+    <meta property="”og:image”" content="./img/jason.jpg" />
+    <meta property="”og:url”" content="https://jeodell.github.io" />
+    <meta property="”og:site_name”" content="Jason O'Dell GitHub" />
+    <meta name="”twitter:title”" content="Jason O'Dell" ” />
+    <meta name="”twitter:description”" content="Jason O'Dell, a Winston-Salem based web developer." />
+    <meta name="”twitter:image”" content="./img/jason.jpg" />
+    <!-- Cormorant Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="./mdbpro/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="./mdbpro/css/mdb.min.css" rel="stylesheet" />
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155080921-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Jason O'Dell</title>
-  <link rel="home" href="https://jeodell.github.io">
-  <link rel="canonical" href="https://jeodell.github.io">
-  <meta name="description" content="Jason O'Dell, a Winston-Salem based web developer.">
-  <meta property=”og:type” content="website" />
-  <meta property=”og:title” content="Jason O'Dell" />
-  <meta property=”og:description” content="Jason O'Dell, a Winston-Salem based web developer." />
-  <meta property=”og:image” content="./img/jason.jpg" />
-  <meta property=”og:url” content="https://jeodell.github.io" />
-  <meta property=”og:site_name” content="Jason O'Dell GitHub" />
-  <meta name=”twitter:title” content="Jason O'Dell" ”>
-  <meta name=”twitter:description” content="Jason O'Dell, a Winston-Salem based web developer.">
-  <meta name=”twitter:image” content="./img/jason.jpg">
-  <!-- Cormorant Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <!-- Bootstrap core CSS -->
-  <link href="./mdbpro/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="./mdbpro/css/mdb.min.css" rel="stylesheet">
-  <!-- Animate on Scroll -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="./styles.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155080921-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      gtag('config', 'UA-155080921-2')
+    </script>
+  </head>
 
-    gtag('config', 'UA-155080921-2');
-  </script>
-</head>
-
-<body>
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-      <div class="container">
-        <a class="navbar-brand navbar-brand-jo" href="/"><strong>Jason O'Dell</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto smooth-scroll">
-            <li class="nav-item">
-              <a class="nav-link nav-link-jo" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-jo" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-jo" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-jo" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Full Page Intro -->
-    <div class="full-page-intro" data-aos="fade-in">
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="container my-5">
-          <div class="row">
-            <div class="col-md-7 white-text text-center d-flex flex-column justify-content-center">
-              <h1 class="title-text-jo white-text font-weight-bold wow fadeInDown" data-wow-delay="0.4s">
-                <strong>Jason O'Dell</strong>
-              </h1>
-              <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-              <h3 class="mb-2 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Aspiring
-                  full-stack web developer from Winston-Salem, NC.</strong>
-              </h3>
-              <div>
-                <i class="far fa-envelope mr-2 wow fadeInDown h5" data-wow-delay="0.4s">
-                  <a class="ml-1 text-white" href="mailto:jasoneodell@gmail.com">
-                    jasoneodell@gmail.com
-                  </a>
-                </i>
-                <i class="fab fa-github ml-2 mb-4 wow fadeInDown h5" data-wow-delay="0.4s">
-                  <a class="ml-1 text-white" href="https://www.github.com/jeodell" target="_blank"
-                    rel="noopener noreferrer">
-                    github.com/jeodell
-                  </a>
-                </i>
-              </div>
-            </div>
-            <div class="col-md-5 mb-4 my-auto">
-              <img src="./img/jason.jpg" class="img-fluid" alt="picture of me">
-            </div>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+          <a class="navbar-brand navbar-brand-jo" href="/"><strong>Jason O'Dell</strong></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto smooth-scroll">
+              <li class="nav-item">
+                <a class="nav-link nav-link-jo" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-jo" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-jo" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-jo" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
+      </nav>
 
-  <!--Main Layout-->
-  <main>
-    <!-- About Me w/ photo, name, location, email, resume, link to portfolio -->
-    <section id="about" class="container mt-5" data-aos="fade-in">
-      <h2 class="text-center mb-3">About</h2>
-      <div class="row">
-        <div class="col-md-10 offset-md-1">
-          <p class="about-text">Since focusing my career on computer science and web development,
-            I've completed the Computer Programming Certificate at NC State as well as freelance and
-            personal projects, and now I am motivated to contribute to an organization that I believe in.
-            I think that an efficient, high quality website sets the standard for the business it represents,
-            and I can build that vision through technical skills, problem solving, seamless communication,
-            and passion for the work. I am quietly confident, naturally curious, and
-            always looking for ways to improve my skills. My experience outside of classwork includes
-            deploying a photography e-commerce website for a friend, working on a couple WordPress websites
-            for UpWork clients, volunteering to redesign the website for Piedmont Legacy Trails, creating
-            a Spotify Web App for myself, and more.
-          </p>
-          <div class="d-flex justify-content-center">
-            <a href="./img/resume.pdf" target="_blank" rel="noopener noreferrer">
-              <button class="btn btn-lg btn-rounded btn-jo">View
-                Resume</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="container mt-5" data-aos="fade-in">
-      <h2 class="text-center mb-5">Skills</h2>
-      <div class="card-deck justify-content-center cards-jo">
-        <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem;">
-          <div class="card-header text-center bg-jo-dark">Front-End</div>
-          <div class="card-body">
-            <h5 class="card-title"><i class="fab fa-html5 mr-2"></i>HTML5</h5>
-            <h5 class="card-title"><i class="fab fa-css3-alt mr-2"></i>CSS3 | Bootstrap</h5>
-            <h5 class="card-title"><i class="fab fa-react mr-2"></i>JavaScript | React</h5>
-          </div>
-        </div>
-        <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem;">
-          <div class="card-header text-center bg-jo-dark">Back-End</div>
-          <div class="card-body">
-            <h5 class="card-title"><i class="fab fa-node-js mr-2"></i>Node.js | Express</h5>
-            <h5 class="card-title"><i class="fab fa-python mr-2"></i>Python | Django</h5>
-            <h5 class="card-title"><i class="fab fa-java mr-2"></i>Java | JUnit Testing</h5>
-          </div>
-        </div>
-        <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem;">
-          <div class="card-header text-center bg-jo-dark">Databases | Deployment</div>
-          <div class="card-body">
-            <h5 class="card-title"><i class="fab fa-deskpro mr-2"></i>PostgreSQL</h5>
-            <h5 class="card-title"><i class="fas fa-database mr-2"></i>MongoDB</h5>
-            <h5 class="card-title"><i class="fab fa-digital-ocean mr-2"></i>Digital Ocean | NGINX</h5>
-            <h5 class="card-title"><i class="fas fa-rocket mr-2"></i>Heroku | Netlify | GitHub Pages</h5>
-          </div>
-        </div>
-        <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem;">
-          <div class="card-header text-center bg-jo-dark">Technologies</div>
-          <div class="card-body">
-            <h5 class="card-title"><i class="fab fa-github mr-2"></i>Git | GitHub</h5>
-            <h5 class="card-title"><i class="fab fa-wordpress mr-2"></i>WordPress</h5>
-            <h5 class="card-title"><i class="fas fa-laptop-code mr-2"></i>VSCode</h5>
-            <h5 class="card-title"><i class="fas fa-book-open mr-2"></i>Jupyter Notebook</h5>
-            <h5 class="card-title"><i class="fas fa-table mr-2"></i>Tableau</h5>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="container mt-5" data-aos="fade-in">
-      <h2 class="text-center mb-5">Portfolio</h2>
-      <div class="row">
-        <!-- BH Photography -->
-        <div class="col-md-4 mb-4">
-          <div class="modal fade" id="modalBKH" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><img src="./img/bh.png"
-                          width="100%" height="100%" style="position:absolute" />
-                      </div>
-                    </div>
-                    <div class="col-lg-5 d-flex justify-content-center">
-                      <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="card-title text-center">Brianna Haferman Photography</h2>
-                        <p class="card-text text-center">Photography e-commerce and portfolio website. Stripe is used to
-                          handle all
-                          credit card transactions.</p>
-                        <p class="card-text text-center">Technologies Used: Django | PostgreSQL | RaspberryPi | NGINX |
-                          GUnicorn |
-                          Stripe | Bootstrap
-                        </p>
-                        <a href="https://www.briannahaferman.com" target="_blank" rel="noopener noreferrer"
-                          class="btn btn-jo-bkh">View Website</a>
-                        <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
+      <!-- Full Page Intro -->
+      <div class="full-page-intro" data-aos="fade-in">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-md-7 white-text text-center d-flex flex-column justify-content-center">
+                <h1 class="title-text-jo white-text font-weight-bold wow fadeInDown" data-wow-delay="0.4s">
+                  <strong>Jason O'Dell</strong>
+                </h1>
+                <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s" />
+                <h3 class="mb-2 white-text wow fadeInDown" data-wow-delay="0.4s">
+                  <strong>Full Stack Developer from Winston-Salem, NC.</strong>
+                </h3>
+                <div>
+                  <i class="far fa-envelope mr-2 wow fadeInDown h5" data-wow-delay="0.4s">
+                    <a class="ml-1 text-white" href="mailto:jasoneodell@gmail.com"> jasoneodell@gmail.com </a>
+                  </i>
+                  <i class="fab fa-github ml-2 mb-4 wow fadeInDown h5" data-wow-delay="0.4s">
+                    <a
+                      class="ml-1 text-white"
+                      href="https://www.github.com/jeodell"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      github.com/jeodell
+                    </a>
+                  </i>
                 </div>
               </div>
+              <div class="col-md-5 mb-4 my-auto">
+                <img src="./img/jason.jpg" class="img-fluid" alt="picture of me" />
+              </div>
             </div>
           </div>
-          <div class="view overlay">
-            <img src="./img/BH Photography 3x2.png" class="card-img-top" alt="">
-            <div class="mask flex-center flex-column rgba-white-strong">
-              <a>
-                <button class="btn btn-lg btn-rounded btn-jo-bkh" data-toggle="modal" data-target="#modalBKH">More
-                  Details</button>
+        </div>
+      </div>
+    </header>
+
+    <!--Main Layout-->
+    <main>
+      <!-- About Me w/ photo, name, location, email, resume, link to portfolio -->
+      <section id="about" class="container mt-5" data-aos="fade-in">
+        <h2 class="text-center mb-3">About</h2>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <p class="about-text">
+              I'm a full stack developer with 3 years of programming experience in both web and mobile development. I'm
+              currently working for VitalFlo, a lung health start-up, building our web portal and mobile app. I have a
+              Computer Programming Certificate from NC State after originally earning a BS in Human Biology before
+              transitioning my career to computer science. Throughout my learning and work, I've picked up skills on the
+              frontend, backend, and mobile sides of development. I pride myself in my problem solving abilities, my
+              communication skills, and my eagerness to learn more about the field. In my spare time, I've also
+              completed many personal projects such as a Flutter app for my wedding trip (including Bingo, a quiz, and
+              more), deploying a photography e-commerce site, volunteering to redesign the website for Piedmont Legacy
+              Trails, creating a Spotify Web App to show you your followed artists' recent releases, and more.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a href="./img/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-lg btn-rounded btn-jo">View Resume</button>
               </a>
             </div>
           </div>
         </div>
-        <!-- Spotify New Releases -->
-        <div class="col-md-4 mb-4">
-          <div class="modal fade" id="modalSpotify" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><video
-                          src="./img/spotify-new-releases-mp4.mp4" width="100%" height="100%" style="position:absolute"
-                          controls></video></div>
-                    </div>
-                    <div class="col-lg-5 d-flex justify-content-center">
-                      <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="card-title text-center">Spotify New Releases</h2>
-                        <p class="card-text mb-0 text-center">Login to Spotify to see a list of the most recent albums
-                          released by
-                          your
-                          followed artists. If you would rather not login, please feel free to watch the video for a
-                          short
-                          preview of the app. </p>
-                        <small class="mb-2 text-center">App uses free version of Heroku for the backend so it may take
-                          15-30
-                          sec</small>
+      </section>
 
-                        <p class="card-text text-center">Technologies Used: React | Python | Flask
-                        </p>
-                        <a href="https://jeodell.github.io/SpotipyNewReleases/" target="_blank"
-                          rel="noopener noreferrer" class="btn btn-jo-spotify">View Website</a>
-                        <a href="https://github.com/jeodell/SpotipyNewReleases" target="_blank"
-                          rel="noopener noreferrer" class="btn btn-jo-spotify">View Front End Code</a>
-                        <a href="https://github.com/jeodell/SpotipyNewReleasesBackend" target="_blank"
-                          rel="noopener noreferrer" class="btn btn-jo-spotify">View Back End Code</a>
-                        <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <!-- Skills -->
+      <section id="skills" class="container mt-5" data-aos="fade-in">
+        <h2 class="text-center mb-5">Skills</h2>
+        <div class="card-deck justify-content-center cards-jo">
+          <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem">
+            <div class="card-header text-center bg-jo-dark">Front-End</div>
+            <div class="card-body">
+              <h5 class="card-title"><i class="fab fa-html5 mr-2"></i>HTML5</h5>
+              <h5 class="card-title"><i class="fab fa-css3-alt mr-2"></i>CSS3 | Bootstrap</h5>
+              <h5 class="card-title"><i class="fab fa-react mr-2"></i>JavaScript | React</h5>
+              <h5 class="card-title"><i class="fas fa-mobile-alt mr-2"></i>Dart | Flutter</h5>
             </div>
           </div>
-          <div class="view overlay">
-            <img src="./img/Spotify New Releases 3x2.png" class="card-img-top" alt="">
-            <div class="mask flex-center flex-column rgba-white-strong">
-              <a>
-                <button class="btn btn-lg btn-rounded btn-jo-spotify" data-toggle="modal"
-                  data-target="#modalSpotify">More Details</button>
-              </a>
+          <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem">
+            <div class="card-header text-center bg-jo-dark">Back-End</div>
+            <div class="card-body">
+              <h5 class="card-title"><i class="fab fa-python mr-2"></i>Python | Django</h5>
+              <h5 class="card-title"><i class="fab fa-node-js mr-2"></i>Node.js | Express</h5>
+              <h5 class="card-title"><i class="fab fa-java mr-2"></i>Java</h5>
             </div>
           </div>
-        </div>
-        <!-- Piedmont Trail Finder -->
-        <div class="col-md-4 mb-4">
-          <div class="modal fade" id="modalPTF" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><img src="./img/ptf.png"
-                          width="100%" height="100%" style="position:absolute" />
-                      </div>
-                    </div>
-                    <div class="col-lg-5 d-flex justify-content-center">
-                      <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="card-title text-center">Piedmont Trail Finder</h2>
-                        <p class="card-text text-center">Browse trails found in the Piedmont or login to add trails
-                          yourself.
-                          Leave reviews and/or likes to let other users know what you think about the trail.</p>
-                        <p class="card-text text-center">I have a more detailed, RESTful API as part of another project
-                          that I am
-                          in
-                          the
-                          process of integrating into this one.</p>
-                        <p class="card-text text-center">Technologies Used: Node.js | Express | Passport | EJS | MongoDB
-                          (Mongoose) | Bootstrap
-                        </p>
-                        <a href="https://piedmont-trail-finder.herokuapp.com/" target="_blank" rel="noopener noreferrer"
-                          class="btn btn-jo-ptf">View Website</a>
-                        <a href="https://github.com/jeodell/PiedmontTrailFinder" target="_blank"
-                          rel="noopener noreferrer" class="btn btn-jo-ptf">View Code</a>
-                        <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem">
+            <div class="card-header text-center bg-jo-dark">Databases | Deployment</div>
+            <div class="card-body">
+              <h5 class="card-title"><i class="fab fa-deskpro mr-2"></i>PostgreSQL</h5>
+              <h5 class="card-title"><i class="fas fa-database mr-2"></i>MongoDB</h5>
+              <h5 class="card-title"><i class="fab fa-digital-ocean mr-2"></i>Digital Ocean | NGINX</h5>
+              <h5 class="card-title"><i class="fas fa-rocket mr-2"></i>Heroku | Netlify | GitHub Pages</h5>
             </div>
           </div>
-          <div class="view overlay">
-            <img src="./img/Piedmont Trail Finder 3x2.png" class="card-img-top" alt="">
-            <div class="mask flex-center flex-column rgba-white-strong">
-              <a>
-                <button class="btn btn-lg btn-rounded btn-jo-ptf" data-toggle="modal" data-target="#modalPTF">More
-                  Details</button>
-              </a>
+          <div class="card text-white bg-jo card-jo mb-4" style="max-width: 20rem">
+            <div class="card-header text-center bg-jo-dark">Technologies</div>
+            <div class="card-body">
+              <h5 class="card-title"><i class="fab fa-github mr-2"></i>Git | GitHub</h5>
+              <h5 class="card-title"><i class="fab fa-wordpress mr-2"></i>WordPress</h5>
+              <h5 class="card-title"><i class="fas fa-laptop-code mr-2"></i>VSCode</h5>
+              <h5 class="card-title"><i class="fas fa-book-open mr-2"></i>Jupyter Notebook</h5>
+              <h5 class="card-title"><i class="fas fa-table mr-2"></i>Tableau</h5>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <!-- Piedmont Legacy Trails -->
-        <div class="col-md-4 mb-4">
-          <div class="modal fade" id="modalPLT" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><img src="./img/plt.jpg"
-                          width="100%" height="100%" style="position:absolute" />
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="container mt-5" data-aos="fade-in">
+        <h2 class="text-center mb-5">Portfolio</h2>
+        <div class="row">
+          <!-- BH Photography -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="modal fade"
+              id="modalBKH"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-7">
+                        <div style="width: 100%; height: 0; padding-bottom: 56%; position: relative">
+                          <img src="./img/bh.png" width="100%" height="100%" style="position: absolute" />
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-lg-5 d-flex justify-content-center">
-                      <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="card-title text-center">Piedmont Legacy Trails</h2>
-                        <p class="card-text text-center">Wordpress website I volunteered to work on and redesign for
-                          Piedmont Land Conservancy and Piedmont Legacy Trails.</p>
-                        <p class="card-text text-center">Technologies Used: WordPress | Elementor
-                        </p>
-                        <a href="https://www.piedmonttrails.org" target="_blank" rel="noopener noreferrer"
-                          class="btn btn-jo-plt">View Website</a>
-                        <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="view overlay">
-            <img src="./img/Piedmont Legacy Trails Cover 3x2.png" class="card-img-top" alt="">
-            <div class="mask flex-center flex-column rgba-white-strong">
-              <a>
-                <button class="btn btn-lg btn-rounded btn-jo-plt" data-toggle="modal" data-target="#modalPLT">More
-                  Details</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- NC State -->
-        <div class="col-md-4 mb-4">
-          <div class="modal fade" id="modalNCSU" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-fluid" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-lg-3 d-flex justify-content-center">
-                      <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="card-title text-center">Pack Scheduler</h2>
-                        <p class="card-text text-center">Program which replicates the registration system students and
-                          faculty use to
-                          register for
-                          classes.</p>
-                        <img src="./img/packscheduler.png" alt="" class="img-fluid">
-                      </div>
-                    </div>
-                    <div class="col-lg-6 d-flex justify-content-center">
-                      <div class="modal-body d-flex flex-column align-items-center">
-                        <h2 class="card-title text-center">NC State Course Projects</h2>
-                        <p class="card-text text-center">Course projects I completed at NC State. These projects focused
-                          on Java and
-                          were more centered around software development. NC State's policy does not allow me to post
-                          the code publicly, but if you would like to see it, I would be happy to
-                          share the private repository
-                          with
-                          you.</p>
-                        <p class="card-text">Technologies Used: Java | JUnit | Jenkins</p>
+                      <div class="col-lg-5 d-flex justify-content-center">
                         <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                          <h2 class="card-title text-center">Service Garage</h2>
-                          <p class="card-text text-center">Program for companies to assign customers to service bays
-                            based
-                            on service
-                            tier and type of vehicle.</p>
-                          <img src="./img/servicegarage.png" alt="" class="img-fluid">
-                          <button type="button" class="btn text-white stylish-color mt-4"
-                            data-dismiss="modal">Close</button>
-
+                          <h2 class="card-title text-center">Brianna Haferman Photography</h2>
+                          <p class="card-text text-center">
+                            Photography e-commerce and portfolio website. Stripe is used to handle all credit card
+                            transactions.
+                          </p>
+                          <p class="card-text text-center">
+                            Technologies Used: Django | PostgreSQL | RaspberryPi | NGINX | GUnicorn | Stripe | Bootstrap
+                          </p>
+                          <a
+                            href="https://www.briannahaferman.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-jo-bkh"
+                            >View Website</a
+                          >
+                          <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-3 d-flex justify-content-center">
-                      <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="card-title text-center">Requirements Tracker</h2>
-                        <p class="card-text text-center">Program for companies to track tasks assigned to developers.
-                        </p>
-                        <img src="./img/reqkeeper.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="view overlay">
+              <img src="./img/BH Photography 3x2.png" class="card-img-top" alt="" />
+              <div class="mask flex-center flex-column rgba-white-strong">
+                <a>
+                  <button class="btn btn-lg btn-rounded btn-jo-bkh" data-toggle="modal" data-target="#modalBKH">
+                    More Details
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Spotify New Releases -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="modal fade"
+              id="modalSpotify"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-7">
+                        <div style="width: 100%; height: 0; padding-bottom: 56%; position: relative">
+                          <video
+                            src="./img/spotify-new-releases-mp4.mp4"
+                            width="100%"
+                            height="100%"
+                            style="position: absolute"
+                            controls
+                          ></video>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                          <h2 class="card-title text-center">Spotify New Releases</h2>
+                          <p class="card-text mb-0 text-center">
+                            Login to Spotify to see a list of the most recent albums released by your followed artists.
+                            If you would rather not login, please feel free to watch the video for a short preview of
+                            the app.
+                          </p>
+                          <small class="mb-2 text-center"
+                            >App uses free version of Heroku for the backend so it may take 15-30 sec</small
+                          >
+
+                          <p class="card-text text-center">Technologies Used: React | Python | Flask</p>
+                          <a
+                            href="https://jeodell.github.io/SpotipyNewReleases/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-jo-spotify"
+                            >View Website</a
+                          >
+                          <a
+                            href="https://github.com/jeodell/SpotipyNewReleases"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-jo-spotify"
+                            >View Front End Code</a
+                          >
+                          <a
+                            href="https://github.com/jeodell/SpotipyNewReleasesBackend"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-jo-spotify"
+                            >View Back End Code</a
+                          >
+                          <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="view overlay">
-            <img src="./img/NC State Projects 3x2.png" class="card-img-top" alt="">
-            <div class="mask flex-center flex-column rgba-white-strong">
-              <a>
-                <button class="btn btn-lg btn-rounded btn-jo-ncsu" data-toggle="modal" data-target="#modalNCSU">More
-                  Details</button>
-              </a>
+            <div class="view overlay">
+              <img src="./img/Spotify New Releases 3x2.png" class="card-img-top" alt="" />
+              <div class="mask flex-center flex-column rgba-white-strong">
+                <a>
+                  <button class="btn btn-lg btn-rounded btn-jo-spotify" data-toggle="modal" data-target="#modalSpotify">
+                    More Details
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Other -->
-        <div class="col-md-4 mb-4">
-          <div class="modal fade" id="modalOP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-lg-6 d-flex justify-content-center">
-                      <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="card-title text-center">IMDB Movie Organizer</h2>
-                        <p class="card-text text-center">I keep many lists and I watch many movies so this Python
-                          program was designed to take in a list of movies then organize and add details to them.</p>
-                        <p class="card-text text-center">Technologies Used: Python
-                        </p>
-                        <a href="https://github.com/jeodell/IMDB-Movie-Organizer" target="_blank"
-                          rel="noopener noreferrer" class="btn btn-jo-op">View Code</a>
+          <!-- Piedmont Trail Finder -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="modal fade"
+              id="modalPTF"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-7">
+                        <div style="width: 100%; height: 0; padding-bottom: 56%; position: relative">
+                          <img src="./img/ptf.png" width="100%" height="100%" style="position: absolute" />
+                        </div>
+                      </div>
+                      <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                          <h2 class="card-title text-center">Piedmont Trail Finder</h2>
+                          <p class="card-text text-center">
+                            Browse trails found in the Piedmont or login to add trails yourself. Leave reviews and/or
+                            likes to let other users know what you think about the trail.
+                          </p>
+                          <p class="card-text text-center">
+                            I have a more detailed, RESTful API as part of another project that I am in the process of
+                            integrating into this one.
+                          </p>
+                          <p class="card-text text-center">
+                            Technologies Used: Node.js | Express | Passport | EJS | MongoDB (Mongoose) | Bootstrap
+                          </p>
+                          <a
+                            href="https://piedmont-trail-finder.herokuapp.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-jo-ptf"
+                            >View Website</a
+                          >
+                          <a
+                            href="https://github.com/jeodell/PiedmontTrailFinder"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-jo-ptf"
+                            >View Code</a
+                          >
+                          <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-6 d-flex justify-content-center">
-                      <div class="modal-body d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="card-title text-center">Sentiment Analysis</h2>
-                        <p class="card-text text-center">Program to perform sentiment analysis on the provided articles.
-                        </p>
-                        <p class="card-text text-center">Technologies Used: Python | NumPy | MatPlotLib | Pandas
-                        </p>
-                        <a href="https://github.com/jeodell/Sentiment-Analysis/blob/master/Sentiment-Analysis-Jupyter.ipynb"
-                          target="_blank" rel="noopener noreferrer" class="btn btn-jo-op">View Code</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center">
-                    <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="view overlay">
-            <img src="./img/Other Projects 3x2.png" class="card-img-top" alt="">
-            <div class="mask flex-center flex-column rgba-white-strong">
-              <a>
-                <button class="btn btn-lg btn-rounded btn-jo-op" data-toggle="modal" data-target="#modalOP">More
-                  Details</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section id="contact" class="contact-section mt-5" data-aos="fade-in">
-      <footer class="page-footer font-small bg-jo">
-        <div class="container">
-          <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-            <div class="col-lg-3 mx-auto mt-5">
-              <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
-              <hr class="hr-light my-4">
-              <h6>
-                <i class="fas fa-home mr-2"></i>Winston-Salem, NC</h6>
-              <h6>
-                <i class="far fa-envelope mr-2"></i>jasoneodell@gmail.com</h6>
-              <h6>
-                <i class="fas fa-phone mr-2"></i>(336) 403-7837</h6>
-
-            </div>
-          </div>
-          <div class="row pb-3">
-            <div class="col-md-12">
-              <div class="mb-5 flex-center">
-                <a href="https://www.linkedin.com/in/jason-o-dell-43b6a564/" target="_blank" rel="noopener noreferrer"
-                  class="li-ic">
-                  <i class="fab fa-linkedin-in fa-lg white-text mr-2"> </i>
-                </a>
-                <a href="https://www.github.com/jeodell" target="_blank" rel="noopener noreferrer" class="gh-ic">
-                  <i class="fab fa-github fa-lg white-text ml-2">
-                  </i>
+            <div class="view overlay">
+              <img src="./img/Piedmont Trail Finder 3x2.png" class="card-img-top" alt="" />
+              <div class="mask flex-center flex-column rgba-white-strong">
+                <a>
+                  <button class="btn btn-lg btn-rounded btn-jo-ptf" data-toggle="modal" data-target="#modalPTF">
+                    More Details
+                  </button>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://mdbootstrap.com/">Jason O'Dell</a>
+        <div class="row">
+          <!-- Piedmont Legacy Trails -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="modal fade"
+              id="modalPLT"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-7">
+                        <div style="width: 100%; height: 0; padding-bottom: 56%; position: relative">
+                          <img src="./img/plt.jpg" width="100%" height="100%" style="position: absolute" />
+                        </div>
+                      </div>
+                      <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                          <h2 class="card-title text-center">Piedmont Legacy Trails</h2>
+                          <p class="card-text text-center">
+                            Wordpress website I volunteered to work on and redesign for Piedmont Land Conservancy and
+                            Piedmont Legacy Trails.
+                          </p>
+                          <p class="card-text text-center">Technologies Used: WordPress | Elementor</p>
+                          <a
+                            href="https://www.piedmonttrails.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-jo-plt"
+                            >View Website</a
+                          >
+                          <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="view overlay">
+              <img src="./img/Piedmont Legacy Trails Cover 3x2.png" class="card-img-top" alt="" />
+              <div class="mask flex-center flex-column rgba-white-strong">
+                <a>
+                  <button class="btn btn-lg btn-rounded btn-jo-plt" data-toggle="modal" data-target="#modalPLT">
+                    More Details
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- NC State -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="modal fade"
+              id="modalNCSU"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-fluid" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-3 d-flex justify-content-center">
+                        <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                          <h2 class="card-title text-center">Pack Scheduler</h2>
+                          <p class="card-text text-center">
+                            Program which replicates the registration system students and faculty use to register for
+                            classes.
+                          </p>
+                          <img src="./img/packscheduler.png" alt="" class="img-fluid" />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 d-flex justify-content-center">
+                        <div class="modal-body d-flex flex-column align-items-center">
+                          <h2 class="card-title text-center">NC State Course Projects</h2>
+                          <p class="card-text text-center">
+                            Course projects I completed at NC State. These projects focused on Java and were more
+                            centered around software development. NC State's policy does not allow me to post the code
+                            publicly, but if you would like to see it, I would be happy to share the private repository
+                            with you.
+                          </p>
+                          <p class="card-text">Technologies Used: Java | JUnit | Jenkins</p>
+                          <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                            <h2 class="card-title text-center">Service Garage</h2>
+                            <p class="card-text text-center">
+                              Program for companies to assign customers to service bays based on service tier and type
+                              of vehicle.
+                            </p>
+                            <img src="./img/servicegarage.png" alt="" class="img-fluid" />
+                            <button type="button" class="btn text-white stylish-color mt-4" data-dismiss="modal">
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 d-flex justify-content-center">
+                        <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                          <h2 class="card-title text-center">Requirements Tracker</h2>
+                          <p class="card-text text-center">
+                            Program for companies to track tasks assigned to developers.
+                          </p>
+                          <img src="./img/reqkeeper.png" alt="" class="img-fluid" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="view overlay">
+              <img src="./img/NC State Projects 3x2.png" class="card-img-top" alt="" />
+              <div class="mask flex-center flex-column rgba-white-strong">
+                <a>
+                  <button class="btn btn-lg btn-rounded btn-jo-ncsu" data-toggle="modal" data-target="#modalNCSU">
+                    More Details
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Other -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="modal fade"
+              id="modalOP"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 d-flex justify-content-center">
+                        <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                          <h2 class="card-title text-center">IMDB Movie Organizer</h2>
+                          <p class="card-text text-center">
+                            I keep many lists and I watch many movies so this Python program was designed to take in a
+                            list of movies then organize and add details to them.
+                          </p>
+                          <p class="card-text text-center">Technologies Used: Python</p>
+                          <a
+                            href="https://github.com/jeodell/IMDB-Movie-Organizer"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-jo-op"
+                            >View Code</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-6 d-flex justify-content-center">
+                        <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                          <h2 class="card-title text-center">Sentiment Analysis</h2>
+                          <p class="card-text text-center">
+                            Program to perform sentiment analysis on the provided articles.
+                          </p>
+                          <p class="card-text text-center">Technologies Used: Python | NumPy | MatPlotLib | Pandas</p>
+                          <a
+                            href="https://github.com/jeodell/Sentiment-Analysis/blob/master/Sentiment-Analysis-Jupyter.ipynb"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-jo-op"
+                            >View Code</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <button type="button" class="btn text-white stylish-color" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="view overlay">
+              <img src="./img/Other Projects 3x2.png" class="card-img-top" alt="" />
+              <div class="mask flex-center flex-column rgba-white-strong">
+                <a>
+                  <button class="btn btn-lg btn-rounded btn-jo-op" data-toggle="modal" data-target="#modalOP">
+                    More Details
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
-    </section>
-  </main>
+      </section>
 
-  <!-- Scripts -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="./mdbpro/js/jquery-3.4.1.min.js"></script>
-  <!-- Tooltips -->
-  <script type="text/javascript" src="./mdbpro/js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="./mdbpro/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="./mdbpro/js/mdb.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    WOW().init();
-    AOS.init({
-      duration: 800, // values from 0 to 3000, with step 50ms
-    });
-  </script>
-</body>
+      <!-- Contact Form -->
+      <section id="contact" class="contact-section mt-5" data-aos="fade-in">
+        <footer class="page-footer font-small bg-jo">
+          <div class="container">
+            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+              <div class="col-lg-3 mx-auto mt-5">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <hr class="hr-light my-4" />
+                <h6><i class="fas fa-home mr-2"></i>Winston-Salem, NC</h6>
+                <h6><i class="far fa-envelope mr-2"></i>jasoneodell@gmail.com</h6>
+                <h6><i class="fas fa-phone mr-2"></i>(336) 403-7837</h6>
+              </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col-md-12">
+                <div class="mb-5 flex-center">
+                  <a
+                    href="https://www.linkedin.com/in/jason-o-dell-43b6a564/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="li-ic"
+                  >
+                    <i class="fab fa-linkedin-in fa-lg white-text mr-2"> </i>
+                  </a>
+                  <a href="https://www.github.com/jeodell" target="_blank" rel="noopener noreferrer" class="gh-ic">
+                    <i class="fab fa-github fa-lg white-text ml-2"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright text-center py-3">
+            © <span id="copyright-year"></span> Copyright:
+            <a href="https://mdbootstrap.com/">Jason O'Dell</a>
+          </div>
+        </footer>
+      </section>
+    </main>
 
+    <!-- Scripts -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="./mdbpro/js/jquery-3.4.1.min.js"></script>
+    <!-- Tooltips -->
+    <script type="text/javascript" src="./mdbpro/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./mdbpro/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="./mdbpro/js/mdb.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      WOW().init()
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      })
+
+      document.getElementById('copyright-year').innerText = new Date().getFullYear()
+    </script>
+  </body>
 </html>
