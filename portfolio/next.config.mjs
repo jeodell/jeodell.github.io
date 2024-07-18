@@ -1,7 +1,9 @@
-/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
+  output: 'export',
   images: {
-    domains: ['tailwindui.com', 'images.unsplash.com'], // Add your custom domains here
+    domains: ['tailwindui.com', 'images.unsplash.com'],
   },
 }
 
