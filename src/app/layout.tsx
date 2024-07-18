@@ -49,7 +49,7 @@ export default function RootLayout({
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <DisclosureButton className="relative inline-flex items-center justify-center p-2 text-gray-400 group rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <DisclosureButton className="relative inline-flex items-center justify-center p-2 text-gray-400 rounded-md group hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
@@ -97,6 +97,28 @@ export default function RootLayout({
             </div>
           </DisclosurePanel>
         </Disclosure>
+        <div className="bg-yellow-500">
+          <div className="px-3 py-3 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div className="flex flex-wrap items-center justify-between">
+              <div className="flex items-center flex-1 w-0">
+                <p className="ml-3 font-medium text-white truncate">
+                  <span className="md:hidden">In progress</span>
+                  <span className="hidden md:inline">
+                    This site is being redesigned so please excuse the ugly parts for now.
+                  </span>
+                </p>
+              </div>
+              <div className="flex-shrink-0 order-2 w-full mt-2 sm:order-3 sm:mt-0 sm:w-auto">
+                <a
+                  href="#contact"
+                  className="flex items-center justify-center px-4 py-2 text-sm font-medium text-yellow-500 bg-white border border-transparent rounded-md shadow-sm hover:bg-yellow-50"
+                >
+                  Contact me
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         {children}
       </body>
     </html>
