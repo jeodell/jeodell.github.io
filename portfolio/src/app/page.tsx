@@ -16,7 +16,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By J
+              By Jbug
             </a>
           </div>
         </div>
