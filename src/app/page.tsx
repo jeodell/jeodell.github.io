@@ -9,11 +9,9 @@ export default function Home() {
             <div className="container mx-auto my-5">
               <div className="flex flex-col md:flex-row">
                 <div className="flex flex-col items-center justify-center text-center text-white md:w-2/3">
-                  <h1 className="mb-4 text-4xl font-bold animate__animated animate__fadeInDown">Jason O&apos;Dell</h1>
-                  <hr className="w-24 my-4 border-t-2 border-white animate__animated animate__fadeInDown" />
-                  <h3 className="mb-4 text-2xl animate__animated animate__fadeInDown">
-                    Full Stack Developer from North Carolina.
-                  </h3>
+                  <h1 className="mb-2 text-4xl font-bold">Jason O&apos;Dell</h1>
+                  <hr className="w-24 my-4 border-t-2 border-white" />
+                  <h3 className="mb-4 text-2xl">Full Stack Developer from North Carolina</h3>
                   <div className="space-x-4">
                     <a className="flex items-center text-white hover:underline" href="mailto:jasoneodell@gmail.com">
                       <EnvelopeIcon className="w-4 h-4 mr-2" />
@@ -31,7 +29,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="my-4 md:w-1/3">
-                  <img src="./img/jason.jpg" className="rounded-full shadow-lg" alt="Jason O'Dell" />
+                  <img src="./img/jason.jpg" alt="Jason O'Dell" />
                 </div>
               </div>
             </div>
@@ -39,17 +37,20 @@ export default function Home() {
           <section id="about" className="container p-5 mx-auto my-10">
             <h2 className="mb-6 text-3xl text-center">About</h2>
             <div className="max-w-4xl mx-auto">
-              <p className="mb-6">
+              <p className="mb-3">
                 I&apos;m a full stack developer with 5 years of programming experience in both web and mobile
-                development. I&apos;m currently working for VitalFlo, a lung health start-up, building our web portal
-                and mobile app. I have a Computer Programming Certificate from NC State after originally earning a BS in
-                Human Biology before transitioning my career to computer science. Throughout my learning and work,
-                I&apos;ve picked up skills on the frontend, backend, and mobile sides of development. I pride myself in
-                my problem solving abilities, my communication skills, and my eagerness to learn more about the field.
-                In my spare time, I&apos;ve also completed many personal projects such as a Flutter app for my wedding
-                trip (including Bingo, a quiz, and more), deploying a photography e-commerce site, volunteering to
-                redesign the website for Piedmont Legacy Trails, creating a Spotify Web App to show you your followed
-                artists&apos; recent releases, and more.
+                development. I&apos;m currently working for a lung health startup building our web portal and mobile
+                app. I have a Computer Programming Certificate from NC State after earning a BS in Human Biology before
+                transitioning my career to computer science. The main technologies I&apos;ve used are Python (Django),
+                Javascript (React), Dart (Flutter), HTML, and CSS.
+              </p>
+              <p className="mb-6">
+                I believe my strengths are my versatility (from wearing many hats at our startup), my communication
+                skills, and my eagerness to learn more about the field. In my spare time, I&apos;ve also completed many
+                personal projects. Some of my favorites are a Flutter app for my wedding trip (including Bingo, a quiz,
+                and more), a photography and a drone website for friends, a redesign of the website for Piedmont Legacy
+                Trails, an interactive trails map, and a Spotify Web App to show you your followed artists&apos; recent
+                releases. You can see all of those and more below.
               </p>
               <div className="text-center">
                 <a
@@ -66,73 +67,30 @@ export default function Home() {
 
           <section id="skills" className="container p-5 mx-auto my-10">
             <h2 className="mb-6 text-3xl text-center">Skills</h2>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               <div className="p-4 text-white bg-blue-500 rounded-lg shadow-md">
                 <h5 className="mb-2 font-bold text-center">Front-End</h5>
                 <ul>
-                  <li>
-                    <i className="mr-2 fab fa-html5"></i>HTML5
-                  </li>
-                  <li>
-                    <i className="mr-2 fab fa-css3-alt"></i>CSS3 | Bootstrap
-                  </li>
-                  <li>
-                    <i className="mr-2 fab fa-react"></i>JavaScript | React
-                  </li>
-                  <li>
-                    <i className="mr-2 fas fa-mobile-alt"></i>Dart | Flutter
-                  </li>
+                  <li>HTML | HTMX</li>
+                  <li>CSS | Tailwind</li>
+                  <li>JavaScript | React (Next.js)</li>
+                  <li>Dart | Flutter (Bloc)</li>
                 </ul>
               </div>
               <div className="p-4 text-white bg-blue-500 rounded-lg shadow-md">
                 <h5 className="mb-2 font-bold text-center">Back-End</h5>
                 <ul>
-                  <li>
-                    <i className="mr-2 fab fa-python"></i>Python | Django
-                  </li>
-                  <li>
-                    <i className="mr-2 fab fa-node-js"></i>Node.js | Express
-                  </li>
-                  <li>
-                    <i className="mr-2 fab fa-java"></i>Java
-                  </li>
+                  <li>Python | Django</li>
+                  <li>Node.js | Express</li>
+                  <li>PostgreSQL</li>
                 </ul>
               </div>
               <div className="p-4 text-white bg-blue-500 rounded-lg shadow-md">
-                <h5 className="mb-2 font-bold text-center">Databases | Deployment</h5>
+                <h5 className="mb-2 font-bold text-center">Other</h5>
                 <ul>
-                  <li>
-                    <i className="mr-2 fab fa-deskpro"></i>PostgreSQL
-                  </li>
-                  <li>
-                    <i className="mr-2 fas fa-database"></i>MongoDB
-                  </li>
-                  <li>
-                    <i className="mr-2 fab fa-digital-ocean"></i>Digital Ocean | NGINX
-                  </li>
-                  <li>
-                    <i className="mr-2 fas fa-rocket"></i>Heroku | Netlify | GitHub Pages
-                  </li>
-                </ul>
-              </div>
-              <div className="p-4 text-white bg-blue-500 rounded-lg shadow-md">
-                <h5 className="mb-2 font-bold text-center">Technologies</h5>
-                <ul>
-                  <li>
-                    <i className="mr-2 fab fa-github"></i>Git | GitHub
-                  </li>
-                  <li>
-                    <i className="mr-2 fab fa-wordpress"></i>WordPress
-                  </li>
-                  <li>
-                    <i className="mr-2 fas fa-laptop-code"></i>VSCode
-                  </li>
-                  <li>
-                    <i className="mr-2 fas fa-book-open"></i>Jupyter Notebook
-                  </li>
-                  <li>
-                    <i className="mr-2 fas fa-table"></i>Tableau
-                  </li>
+                  <li>Git</li>
+                  <li>WordPress</li>
+                  <li>MapBox</li>
                 </ul>
               </div>
             </div>
