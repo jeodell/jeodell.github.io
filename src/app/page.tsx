@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <body>
-        <main>
+        <main className="bg-gray-50 dark:bg-gray-800">
           <div className="flex items-center justify-center">
             <div className="container mx-auto my-5">
               <div className="flex flex-col md:flex-row">

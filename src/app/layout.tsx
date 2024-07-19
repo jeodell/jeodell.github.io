@@ -112,7 +112,7 @@ export default function RootLayout({
                   </span>
                 </p>
               </div>
-              <div className="flex-shrink-0 order-2 w-full mt-2 sm:order-3 sm:mt-0 sm:w-auto">
+              <div className="order-2 mt-2 sm:order-3 sm:mt-0">
                 <a
                   href="#contact"
                   className="flex items-center justify-center px-4 py-2 text-sm font-medium text-yellow-500 border border-transparent rounded-md shadow-sm bg-gray-50 hover:bg-yellow-50"
