@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import type { Metadata } from 'next'
 import { Cormorant } from 'next/font/google'
 import './globals.css'
+import ThemeToggle from './theme'
 
 const cormorant = Cormorant({ subsets: ['latin'] })
 
@@ -44,12 +45,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cormorant.className}>
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-gray-50 dark:bg-gray-800">
           <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <DisclosureButton className="relative inline-flex items-center justify-center p-2 text-gray-400 rounded-md group hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <DisclosureButton className="relative inline-flex items-center justify-center p-2 text-gray-400 rounded-md group focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:hover:bg-gray-700 dark:hover:text-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
@@ -65,7 +66,9 @@ export default function RootLayout({
                         href={item.href}
                         aria-current={item.current ? 'page' : undefined}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current
+                            ? 'bg-gray-100 text-gray-700 hover:bg-gray-50 hover:text-gray-500 dark:bg-gray-900 dark:text-gray-100'
+                            : 'bg-gray-50 text-gray-700 hover:text-gray-500 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-800 dark:hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium',
                         )}
                       >
@@ -75,6 +78,7 @@ export default function RootLayout({
                   </div>
                 </div>
               </div>
+              <ThemeToggle />
             </div>
           </div>
 
@@ -111,7 +115,7 @@ export default function RootLayout({
               <div className="flex-shrink-0 order-2 w-full mt-2 sm:order-3 sm:mt-0 sm:w-auto">
                 <a
                   href="#contact"
-                  className="flex items-center justify-center px-4 py-2 text-sm font-medium text-yellow-500 bg-white border border-transparent rounded-md shadow-sm hover:bg-yellow-50"
+                  className="flex items-center justify-center px-4 py-2 text-sm font-medium text-yellow-500 border border-transparent rounded-md shadow-sm bg-gray-50 hover:bg-yellow-50"
                 >
                   Contact me
                 </a>
