@@ -8,17 +8,17 @@ export default function Home() {
           <div className="flex items-center justify-center">
             <div className="container mx-auto my-5">
               <div className="flex flex-col md:flex-row">
-                <div className="flex flex-col items-center justify-center text-center text-gray-700 md:w-2/3">
+                <div className="flex flex-col items-center justify-center text-center md:w-2/3">
                   <h1 className="mb-2 text-4xl font-bold">Jason O&apos;Dell</h1>
-                  <hr className="w-24 my-4 border-t-2 border-gray-700 dark:border-white" />
+                  <hr className="w-24 my-4 border-t-2 border-gray-700 dark:border-zinc-200" />
                   <h3 className="mb-4 text-2xl">Full Stack Developer from North Carolina</h3>
                   <div className="space-x-4">
-                    <a className="flex items-center text-gray-700 hover:underline" href="mailto:jasoneodell@gmail.com">
+                    <a className="flex items-center hover:underline" href="mailto:jasoneodell@gmail.com">
                       <EnvelopeIcon className="w-4 h-4 mr-2" />
                       jasoneodell@gmail.com
                     </a>
                     <a
-                      className="flex items-center text-gray-700 hover:underline"
+                      className="flex items-center hover:underline"
                       href="https://www.github.com/jeodell"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -57,7 +57,7 @@ export default function Home() {
                   href="./img/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-2 text-gray-700 bg-blue-500 rounded-full"
+                  className="px-6 py-2 bg-blue-500 rounded-full text-zinc-200"
                 >
                   View Resume
                 </a>
@@ -67,8 +67,8 @@ export default function Home() {
 
           <section id="skills" className="container p-5 mx-auto my-10">
             <h2 className="mb-6 text-3xl text-center">Skills</h2>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-              <div className="p-4 text-gray-700 bg-blue-500 rounded-lg shadow-md">
+            <div className="grid grid-cols-1 gap-4 text-zinc-200 md:grid-cols-2 lg:grid-cols-3">
+              <div className="p-4 bg-blue-500 rounded-lg shadow-md">
                 <h5 className="mb-2 font-bold text-center">Front-End</h5>
                 <ul>
                   <li>HTML | HTMX</li>
@@ -77,7 +77,7 @@ export default function Home() {
                   <li>Dart | Flutter (Bloc)</li>
                 </ul>
               </div>
-              <div className="p-4 text-gray-700 bg-blue-500 rounded-lg shadow-md">
+              <div className="p-4 bg-blue-500 rounded-lg shadow-md">
                 <h5 className="mb-2 font-bold text-center">Back-End</h5>
                 <ul>
                   <li>Python | Django</li>
@@ -85,7 +85,7 @@ export default function Home() {
                   <li>PostgreSQL</li>
                 </ul>
               </div>
-              <div className="p-4 text-gray-700 bg-blue-500 rounded-lg shadow-md">
+              <div className="p-4 bg-blue-500 rounded-lg shadow-md">
                 <h5 className="mb-2 font-bold text-center">Other</h5>
                 <ul>
                   <li>Git</li>
@@ -102,11 +102,7 @@ export default function Home() {
               <div className="relative group">
                 <img src="./img/BH Photography 3x2.png" className="w-full rounded-lg shadow-md" alt="" />
                 <div className="absolute inset-0 flex items-center justify-center transition-opacity bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
-                  <button
-                    className="px-6 py-2 text-gray-700 bg-blue-500 rounded-full"
-                    data-toggle="modal"
-                    data-target="#modalBKH"
-                  >
+                  <button className="px-6 py-2 bg-blue-500 rounded-full" data-toggle="modal" data-target="#modalBKH">
                     More Details
                   </button>
                 </div>
@@ -115,7 +111,7 @@ export default function Home() {
                 <img src="./img/Spotify New Releases 3x2.png" className="w-full rounded-lg shadow-md" alt="" />
                 <div className="absolute inset-0 flex items-center justify-center transition-opacity bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
                   <button
-                    className="px-6 py-2 text-gray-700 bg-blue-500 rounded-full"
+                    className="px-6 py-2 bg-blue-500 rounded-full"
                     data-toggle="modal"
                     data-target="#modalSpotify"
                   >
@@ -126,11 +122,7 @@ export default function Home() {
               <div className="relative group">
                 <img src="./img/Piedmont Trail Finder 3x2.png" className="w-full rounded-lg shadow-md" alt="" />
                 <div className="absolute inset-0 flex items-center justify-center transition-opacity bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
-                  <button
-                    className="px-6 py-2 text-gray-700 bg-blue-500 rounded-full"
-                    data-toggle="modal"
-                    data-target="#modalPTF"
-                  >
+                  <button className="px-6 py-2 bg-blue-500 rounded-full" data-toggle="modal" data-target="#modalPTF">
                     More Details
                   </button>
                 </div>
@@ -138,11 +130,7 @@ export default function Home() {
               <div className="relative group">
                 <img src="./img/Piedmont Legacy Trails Cover 3x2.png" className="w-full rounded-lg shadow-md" alt="" />
                 <div className="absolute inset-0 flex items-center justify-center transition-opacity bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
-                  <button
-                    className="px-6 py-2 text-gray-700 bg-blue-500 rounded-full"
-                    data-toggle="modal"
-                    data-target="#modalPLT"
-                  >
+                  <button className="px-6 py-2 bg-blue-500 rounded-full" data-toggle="modal" data-target="#modalPLT">
                     More Details
                   </button>
                 </div>
@@ -150,11 +138,7 @@ export default function Home() {
               <div className="relative group">
                 <img src="./img/NC State Projects 3x2.png" className="w-full rounded-lg shadow-md" alt="" />
                 <div className="absolute inset-0 flex items-center justify-center transition-opacity bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
-                  <button
-                    className="px-6 py-2 text-gray-700 bg-blue-500 rounded-full"
-                    data-toggle="modal"
-                    data-target="#modalNCSU"
-                  >
+                  <button className="px-6 py-2 bg-blue-500 rounded-full" data-toggle="modal" data-target="#modalNCSU">
                     More Details
                   </button>
                 </div>
@@ -162,11 +146,7 @@ export default function Home() {
               <div className="relative group">
                 <img src="./img/Other Projects 3x2.png" className="w-full rounded-lg shadow-md" alt="" />
                 <div className="absolute inset-0 flex items-center justify-center transition-opacity bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
-                  <button
-                    className="px-6 py-2 text-gray-700 bg-blue-500 rounded-full"
-                    data-toggle="modal"
-                    data-target="#modalOP"
-                  >
+                  <button className="px-6 py-2 bg-blue-500 rounded-full" data-toggle="modal" data-target="#modalOP">
                     More Details
                   </button>
                 </div>
@@ -174,11 +154,11 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="contact" className="py-10 text-gray-700 bg-blue-500">
+          <section id="contact" className="py-10 bg-blue-500 text-zinc-200">
             <footer className="container mx-auto">
               <div className="mb-10 text-center">
                 <p className="mb-4 text-xl font-bold">Contact</p>
-                <hr className="w-24 mx-auto my-4 border-t-2 border-gray-700 dark:border-white" />
+                <hr className="w-24 mx-auto my-4 border-t-2 border-zinc-200" />
                 <p className="flex items-center justify-center">
                   <HomeIcon className="w-4 h-4 mr-2" />
                   North Carolina
