@@ -18,6 +18,12 @@ const config: Config = {
       '3xl': '1600px',
       '4xl': '1920px',
     },
+    extend: {
+      colors: {
+        'jo-dark': '#282e2a',
+        'jo-light': '#5c645a',
+      },
+    },
   },
   darkMode: 'class',
   plugins: [],
