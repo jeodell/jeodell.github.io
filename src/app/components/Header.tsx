@@ -2,6 +2,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import '../globals.css'
 import ThemeToggle from '../theme'
+import InProgressBanner from './InProgressBanner'
 
 const navigation = [
   { name: 'Skills', href: '#skills', current: false },
@@ -60,7 +61,7 @@ export default function Header() {
           </div>
         </DisclosurePanel>
       </Disclosure>
-      {/* <InProgressBanner /> */}
+      <InProgressBanner />
     </>
   )
 }
