@@ -10,10 +10,10 @@ const navigation = [
   { name: 'Contact', href: '#contact', current: false },
 ]
 
-export default function header() {
+export default function Header() {
   return (
     <>
-      <Disclosure as="nav" className="bg-jo-light dark:bg-jo-dark">
+      <Disclosure as="nav" className="dark:bg-jo-medium bg-jo-light text-zinc-200">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-20 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -33,7 +33,7 @@ export default function header() {
                       key={item.name}
                       href={item.href}
                       aria-current={item.current ? 'page' : undefined}
-                      className="text-md rounded-md bg-zinc-50 px-3 py-2 font-medium hover:underline dark:bg-jo-dark dark:hover:text-zinc-50"
+                      className="text-md dark:bg-jo-medium rounded-md px-3 py-2 font-medium hover:underline dark:hover:text-zinc-50"
                     >
                       {item.name}
                     </a>
@@ -53,7 +53,7 @@ export default function header() {
                 as="a"
                 href={item.href}
                 aria-current={item.current ? 'page' : undefined}
-                className="text-gray-70 block rounded-md bg-zinc-50 px-3 py-2 text-base font-medium hover:underline dark:bg-jo-dark"
+                className="dark:bg-jo-medium block rounded-md bg-jo-light px-3 py-2 text-base font-medium text-zinc-200 hover:underline"
               >
                 {item.name}
               </DisclosureButton>
@@ -61,28 +61,7 @@ export default function header() {
           </div>
         </DisclosurePanel>
       </Disclosure>
-      <div className="bg-yellow-500">
-        <div className="mx-auto max-w-7xl px-3 py-3 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-between">
-            <div className="flex w-0 flex-1 items-center">
-              <p className="ml-3 truncate font-medium text-zinc-50">
-                <span className="md:hidden">In progress</span>
-                <span className="hidden md:inline">
-                  This site is being redesigned so please excuse the ugly parts for now.
-                </span>
-              </p>
-            </div>
-            <div className="order-2 mt-2 sm:order-3 sm:mt-0">
-              <a
-                href="#contact"
-                className="flex items-center justify-center rounded-md border border-transparent bg-zinc-50 px-4 py-2 text-sm font-medium text-yellow-500 shadow-sm hover:bg-yellow-50"
-              >
-                Contact me
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* <InProgressBanner /> */}
     </>
   )
 }
