@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
-import { Cormorant } from 'next/font/google'
+import { Bitter, Cormorant } from 'next/font/google'
 import Header from './components/Header'
 import './globals.css'
 
 import { classNames } from './helper/helper'
 
 const cormorant = Cormorant({ subsets: ['latin'] })
+const bitter = Bitter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Jason O'Dell",
@@ -33,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={classNames(cormorant.className, 'text-gray-700 dark:text-zinc-200')}>
+      <body className={classNames(bitter.className, 'bg-zinc-50 text-gray-700 dark:bg-jo-dark dark:text-zinc-200')}>
         <Header />
         {children}
       </body>

@@ -21,6 +21,7 @@ const config: Config = {
     extend: {
       colors: {
         'jo-dark': '#282e2a',
+        'jo-medium': '#373d37',
         'jo-light': '#5c645a',
       },
     },
