@@ -3,19 +3,22 @@
 import { CodeBracketIcon, UserCircleIcon } from '@heroicons/react/24/outline'
 import Footer from './components/Footer'
 import ProjectCard from './components/ProjectCard'
+import SkillCard from './components/SkillCard'
 
 export default function Home() {
+  const yearsOfExperience = new Date().getFullYear() - 2019
+
   return (
     <main className="text-gray-700 dark:text-zinc-200">
-      <section id="intro" className="container mx-auto my-4 p-5">
+      <section id="intro" className="container mx-auto my-8 p-4">
         <div className="flex items-center justify-center">
-          <div className="mx-auto my-5">
-            <div className="flex flex-col md:flex-row">
-              <div className="flex flex-col items-center justify-center text-center md:w-2/3">
-                <h1 className="mb-2 text-4xl font-bold">Jason O&apos;Dell</h1>
+          <div className="mx-auto my-8">
+            <div className="flex flex-col lg:flex-row">
+              <div className="flex flex-col items-center justify-center text-center lg:w-3/4">
+                <h1 className="my-2 text-4xl font-bold">Jason O&apos;Dell</h1>
                 <hr className="my-4 w-24 border-t-2 border-gray-700 dark:border-zinc-200" />
-                <p className="mb-4 text-2xl">Full Stack Developer from North Carolina</p>
-                <div className="flex flex-col items-start justify-center">
+                <p className="my-2 text-2xl">Full Stack Developer from North Carolina</p>
+                <div className="mb-6 mt-2 flex flex-col items-start justify-center md:flex-row md:space-x-8">
                   <a
                     className="flex items-center hover:underline"
                     href="https://www.linkedin.com/in/jasoneodell"
@@ -35,8 +38,35 @@ export default function Home() {
                     github.com/jeodell
                   </a>
                 </div>
+                <div className="flex flex-wrap space-y-2 lg:px-16">
+                  <p className="text-left">
+                    I&apos;m a full stack developer with {yearsOfExperience} years of programming experience in both web
+                    and mobile development. I&apos;m currently working on the clinician portal and mobile app at our
+                    respiratory health startup. I have a Computer Programming Certificate from NC State after earning a
+                    BS in Human Biology before transitioning my career to computer science. The main technologies
+                    I&apos;ve used are Python (Django), Javascript (React), Dart (Flutter), HTML, and CSS.
+                  </p>
+                  <p className="text-left">
+                    I believe my strengths are my versatility (from wearing many hats at our startup), communication
+                    skills, and eagerness to learn more about the field. In my spare time, I&apos;ve also completed many
+                    personal projects. Some of my favorites are a Flutter app for my wedding trip (including Bingo, a
+                    quiz, and more), photography and drone websites for friends, a redesign of the website for Piedmont
+                    Legacy Trails, an interactive trails map, and a Spotify Web App to show you your followed
+                    artists&apos; recent releases. You can see all of those and more below.
+                  </p>
+                </div>
+                <div className="mt-4 flex max-w-4xl self-start lg:px-16">
+                  <a
+                    href="./img/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="dark:bg-jo-medium dark:hover:bg-jo-medium/80 mx-auto rounded-full bg-jo-light px-6 py-3 text-center text-zinc-200 hover:bg-jo-light/90"
+                  >
+                    View Resume
+                  </a>
+                </div>
               </div>
-              <div className="mx-auto mb-0 mt-8 w-1/2 md:my-4 md:w-1/3">
+              <div className="mx-auto mb-0 mt-8 flex w-3/4 items-center sm:w-1/2 lg:my-4 lg:w-1/4">
                 <img src="./img/jason.jpg" alt="Jason O'Dell" />
               </div>
             </div>
@@ -44,69 +74,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="container mx-auto my-4 p-5">
-        <h2 className="mb-4 text-center text-3xl">About</h2>
-        <div className="mx-auto flex max-w-4xl flex-col space-y-4">
-          <p>
-            I&apos;m a full stack developer with 5 years of programming experience in both web and mobile development.
-            I&apos;m currently working for a lung health startup building our web portal and mobile app. I have a
-            Computer Programming Certificate from NC State after earning a BS in Human Biology before transitioning my
-            career to computer science. The main technologies I&apos;ve used are Python (Django), Javascript (React),
-            Dart (Flutter), HTML, and CSS.
-          </p>
-          <p>
-            I believe my strengths are my versatility (from wearing many hats at our startup), my communication skills,
-            and my eagerness to learn more about the field. In my spare time, I&apos;ve also completed many personal
-            projects. Some of my favorites are a Flutter app for my wedding trip (including Bingo, a quiz, and more), a
-            photography and a drone website for friends, a redesign of the website for Piedmont Legacy Trails, an
-            interactive trails map, and a Spotify Web App to show you your followed artists&apos; recent releases. You
-            can see all of those and more below.
-          </p>
-          <a
-            href="./img/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="dark:bg-jo-medium dark:hover:bg-jo-medium/80 mx-auto rounded-full bg-jo-light px-6 py-3 text-center text-zinc-200 hover:bg-jo-light/90"
-          >
-            View Resume
-          </a>
-        </div>
-      </section>
-
-      <section id="skills" className="container mx-auto my-8 p-5">
-        <h2 className="mb-4 text-center text-3xl">Skills</h2>
+      <section id="skills" className="container mx-auto mb-24 mt-12 p-4">
+        <h2 className="mb-8 text-center text-4xl">Skills</h2>
         <div className="grid grid-cols-1 gap-4 text-zinc-200 xs:grid-cols-2 lg:grid-cols-3">
-          <div className="dark:bg-jo-medium rounded-lg bg-jo-light p-4 shadow-md">
-            <h3 className="mb-2 text-center text-lg font-semibold">Front-End</h3>
-            <ul>
-              <li>HTML | HTMX</li>
-              <li>CSS | Tailwind</li>
-              <li>JavaScript | React</li>
-              <li>Dart | Flutter</li>
-            </ul>
-          </div>
-          <div className="dark:bg-jo-medium rounded-lg bg-jo-light p-4 shadow-md">
-            <h3 className="mb-2 text-center text-lg font-semibold">Back-End</h3>
-            <ul>
-              <li>Python | Django</li>
-              <li>Node.js | Express</li>
-              <li>PostgreSQL</li>
-            </ul>
-          </div>
-          <div className="dark:bg-jo-medium rounded-lg bg-jo-light p-4 shadow-md">
-            <h3 className="mb-2 text-center text-lg font-semibold">Other</h3>
-            <ul>
-              <li>Git</li>
-              <li>WordPress</li>
-              <li>Webflow</li>
-              <li>MapBox</li>
-            </ul>
-          </div>
+          <SkillCard
+            title="Frontend"
+            skills={['HTML | HTMX', 'CSS | Tailwind', 'Javascript | React', 'Dart | Flutter']}
+          />
+          <SkillCard title="Backend" skills={['Python | Django', 'Node.js | Express', 'PostgreSQL']} />
+          <SkillCard title="Other" skills={['Git | GitHub', 'WordPress', 'Webflow', 'MapBox']} />
         </div>
       </section>
 
-      <section id="projects" className="container mx-auto mb-24 mt-8 p-5">
-        <h2 className="mb-4 text-center text-3xl">Projects</h2>
+      <section id="projects" className="container mx-auto my-24 p-4">
+        <h2 className="mb-8 text-center text-4xl">Projects</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
             title="Brianna Haferman Photography"
