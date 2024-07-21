@@ -4,7 +4,6 @@ import '../globals.css'
 import ThemeToggle from '../theme'
 
 const navigation = [
-  { name: 'About', href: '#about', current: true },
   { name: 'Skills', href: '#skills', current: false },
   { name: 'Projects', href: '#projects', current: false },
   { name: 'Contact', href: '#contact', current: false },
