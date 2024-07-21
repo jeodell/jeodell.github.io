@@ -48,25 +48,21 @@ export default function ProjectCardDialog(props: ProjectCardDialogProps) {
       aria-hidden="true"
       ref={dialogRef}
     >
-      <div className="flex flex-wrap">
-        <div className="col-lg-7">
-          <div className="w-full pb-2">
-            {props.isVideo ? (
-              <video src={props.img} width="100%" height="100%" controls autoPlay muted />
-            ) : (
-              <img src={props.img} width="100%" height="100%" />
-            )}
-          </div>
+      <div className="flex flex-col">
+        <div className="w-full pb-4">
+          {props.isVideo ? (
+            <video src={props.img} width="100%" height="100%" controls autoPlay muted />
+          ) : (
+            <img src={props.img} width="100%" height="100%" />
+          )}
         </div>
-        <div className="col-lg-5 flex justify-center">
-          <div className="flex flex-col items-center justify-center">
-            <p>{props.title}</p>
-            <p className="text-center">{props.description}</p>
-            <p className="text-center">Technologies Used: {props.technologies.join(' | ')}</p>
-            <a href={props.website} target="_blank" rel="noopener noreferrer" className="">
-              View Website
-            </a>
-          </div>
+        <div className="flex flex-col items-center justify-center">
+          <h3 className="text-lg font-semibold">{props.title}</h3>
+          <p className="text-center">{props.description}</p>
+          <p className="text-center">Technologies Used: {props.technologies.join(' | ')}</p>
+          <a href={props.website} target="_blank" rel="noopener noreferrer" className="">
+            View Website
+          </a>
         </div>
       </div>
     </dialog>
