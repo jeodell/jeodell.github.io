@@ -100,6 +100,16 @@ export default function Home() {
             coverAlt="Brianna Haferman Photography"
           />
           <ProjectCard
+            title="Boone UAS"
+            img="./img/booneuas_website.png"
+            description="Website for Drone imaging business."
+            technologies={['React.js', 'Next.js']}
+            website="https://www.booneuasdrones.com"
+            dialogId="booneuas-dialog"
+            coverImg="./img/booneuas_card.png"
+            coverAlt="Boone UAS"
+          />
+          <ProjectCard
             title="Piedmont Legacy Trails"
             img="./img/plt_website.jpg"
             description="Interactive map of trails in the Piedmont region of North Carolina."
@@ -108,6 +118,28 @@ export default function Home() {
             dialogId="plt-dialog"
             coverImg="./img/plt_card.png"
             coverAlt="Piedmont Legacy Trails"
+          />
+          <ProjectCard
+            title="Wedding App"
+            img="./img/wedding_app.mp4"
+            description="Flutter app for my wedding trip with Bingo, Quiz, and more."
+            technologies={['Dart', 'Flutter']}
+            website=""
+            dialogId="wedding-dialog"
+            coverImg="./img/wedding_card.png"
+            coverAlt="Wedding App"
+            isVideo={true}
+            isPortrait={true}
+          />
+          <ProjectCard
+            title="Piedmont Legacy Trails Map"
+            img="./img/plt_map.png"
+            description="Interactive map of trails in the Piedmont region of North Carolina."
+            technologies={['Javascript', 'MapBox']}
+            website="https://jeodell.github.io/PiedmontLegacyTrailsMap/"
+            dialogId="plt-map-dialog"
+            coverImg="./img/plt_map_card.png"
+            coverAlt="Piedmont Legacy Trails Map"
           />
           <ProjectCard
             title="Spotify New Releases"
@@ -119,26 +151,6 @@ export default function Home() {
             coverImg="./img/spotify_card.png"
             coverAlt="Spotify New Releases"
             isVideo={true}
-          />
-          <ProjectCard
-            title="Piedmont Trail Finder"
-            img="./img/ptf_website.png"
-            description="Browse trails in the Piedmont or login to add trails yourself."
-            technologies={['Node.js', 'Express', 'MongoDB', 'EJS']}
-            website="https://piedmont-trail-finder.herokuapp.com/"
-            dialogId="ptf-dialog"
-            coverImg="./img/ptf_card.png"
-            coverAlt="Piedmont Trail Finder"
-          />
-          <ProjectCard
-            title="Other Projects"
-            img=""
-            description="Personal projects not listed above."
-            technologies={['Python', 'Java', 'C']}
-            website=""
-            dialogId="other-dialog"
-            coverImg="./img/other_card.png"
-            coverAlt="Other Projects"
           />
         </div>
       </section>
