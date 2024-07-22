@@ -10,6 +10,7 @@ interface ProjectCardProps {
   coverImg: string
   coverAlt: string
   isVideo?: boolean
+  isPortrait?: boolean
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
@@ -37,6 +38,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           website={props.website}
           dialogId={props.dialogId}
           isVideo={props.isVideo}
+          isPortrait={props.isPortrait}
         />
       </div>
     </div>
