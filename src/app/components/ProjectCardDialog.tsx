@@ -9,6 +9,7 @@ interface ProjectCardDialogProps {
   dialogId: string
   isVideo?: boolean
   isPortrait?: boolean
+  isCodeOnly?: boolean
 }
 
 export default function ProjectCardDialog(props: ProjectCardDialogProps) {
@@ -44,14 +45,14 @@ export default function ProjectCardDialog(props: ProjectCardDialogProps) {
 
   return (
     <dialog
-      className="mx-auto my-auto w-2/3 bg-white backdrop-blur-lg"
+      className="mx-auto my-auto w-2/3 rounded-lg bg-white p-8 backdrop:bg-jo-dark/50 backdrop:backdrop-blur-sm dark:bg-jo-dark"
       id={props.dialogId}
       aria-hidden="true"
       ref={dialogRef}
     >
       {props.isPortrait ? (
-        <div className="flex flex-row">
-          <div className="flex justify-center pb-4">
+        <div className="flex flex-col md:flex-row md:space-x-16">
+          <div className="mb-8 flex justify-center">
             {props.isVideo ? (
               <video src={props.img} className="max-h-96" controls autoPlay muted />
             ) : (
@@ -60,21 +61,22 @@ export default function ProjectCardDialog(props: ProjectCardDialogProps) {
           </div>
           <div className="flex flex-col items-center justify-center">
             <h3 className="text-lg font-semibold">{props.title}</h3>
-            <p className="text-center">{props.description}</p>
-            <p className="text-center">Technologies Used: {props.technologies.join(' | ')}</p>
+            <p className="mb-4 text-center font-light">{props.description}</p>
+            <p className="text-center">Technologies Used:</p>
+            <p className="mb-6 text-center font-light">{props.technologies.join(' | ')}</p>
             <a
               href={props.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="focus:outline-none focus:ring-2 focus:ring-jo-dark"
+              className="mx-auto rounded-full bg-jo-light px-6 py-2 text-center text-zinc-200 hover:bg-jo-light/90 focus:outline-none focus:outline-jo-light focus:ring-2 focus:ring-zinc-200 dark:bg-jo-medium dark:hover:bg-jo-medium/80 dark:focus:ring-zinc-200"
             >
-              View Website
+              {props.isCodeOnly ? 'View Code' : 'View Website'}
             </a>
           </div>
         </div>
       ) : (
         <div className="flex flex-col">
-          <div className="flex justify-center pb-4">
+          <div className="mb-8 flex justify-center">
             {props.isVideo ? (
               <video src={props.img} className="max-h-96" controls autoPlay muted />
             ) : (
@@ -83,15 +85,16 @@ export default function ProjectCardDialog(props: ProjectCardDialogProps) {
           </div>
           <div className="flex flex-col items-center justify-center">
             <h3 className="text-lg font-semibold">{props.title}</h3>
-            <p className="text-center">{props.description}</p>
-            <p className="text-center">Technologies Used: {props.technologies.join(' | ')}</p>
+            <p className="mb-4 text-center font-light">{props.description}</p>
+            <p className="text-center">Technologies Used:</p>
+            <p className="mb-6 text-center font-light">{props.technologies.join(' | ')}</p>
             <a
               href={props.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="focus:outline-none focus:ring-2 focus:ring-jo-dark"
+              className="mx-auto rounded-full bg-jo-light px-6 py-2 text-center text-zinc-200 hover:bg-jo-light/90 focus:outline-none focus:outline-jo-light focus:ring-2 focus:ring-zinc-200 dark:bg-jo-medium dark:hover:bg-jo-medium/80 dark:focus:ring-zinc-200"
             >
-              View Website
+              {props.isCodeOnly ? 'View Code' : 'View Website'}
             </a>
           </div>
         </div>

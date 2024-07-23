@@ -41,18 +41,18 @@ export default function Home() {
                 <div className="flex flex-wrap space-y-2 lg:px-16">
                   <p className="text-left">
                     I&apos;m a full stack developer with {yearsOfExperience} years of programming experience in both web
-                    and mobile development. I&apos;m currently working on the clinician portal and mobile app at our
-                    respiratory health startup. I have a Computer Programming Certificate from NC State after earning a
-                    BS in Human Biology before transitioning my career to computer science. The main technologies
-                    I&apos;ve used are Python (Django), Javascript (React), Dart (Flutter), HTML, and CSS.
+                    and mobile development. I&apos;m currently working on the clinician portal and mobile app at
+                    VitalFlo, a respiratory health startup. I have a Computer Programming Certificate from NC State
+                    after earning a BS in Human Biology before transitioning my career to computer science. The main
+                    technologies I&apos;ve used are Python (Django), Javascript (React), Dart (Flutter), HTML, and CSS.
                   </p>
                   <p className="text-left">
-                    I believe my strengths are my versatility (from wearing many hats at our startup), communication
+                    I believe my strengths are my versatility (from wearing many hats at VitalFlo), communication
                     skills, and eagerness to learn more about the field. In my spare time, I&apos;ve also completed many
                     personal projects. Some of my favorites are a Flutter app for my wedding trip (including Bingo, a
-                    quiz, and more), photography and drone websites for friends, a redesign of the website for Piedmont
-                    Legacy Trails, an interactive trails map, and a Spotify Web App to show you your followed
-                    artists&apos; recent releases. You can see all of those and more below.
+                    quiz, and more), photography and drone websites for friends, an interactive trails map, and a
+                    Spotify Web App to show you your followed artists&apos; recent releases. You can see all of those
+                    and more below.
                   </p>
                 </div>
                 <div className="mt-4 flex max-w-4xl self-start lg:px-16">
@@ -60,7 +60,7 @@ export default function Home() {
                     href="./img/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mx-auto rounded-full bg-jo-light px-6 py-3 text-center text-zinc-200 hover:bg-jo-light/90 focus:outline-none focus:outline-jo-light focus:ring-2 focus:ring-zinc-200 dark:bg-jo-medium dark:hover:bg-jo-medium/80 dark:focus:ring-zinc-200"
+                    className="mx-auto rounded-full bg-jo-light px-6 py-2 text-center text-zinc-200 hover:bg-jo-light/90 focus:outline-none focus:outline-jo-light focus:ring-2 focus:ring-zinc-200 dark:bg-jo-medium dark:hover:bg-jo-medium/80 dark:focus:ring-zinc-200"
                   >
                     View Resume
                   </a>
@@ -93,7 +93,7 @@ export default function Home() {
             title="Brianna Haferman Photography"
             img="./img/bkh_website.png"
             description="Creative media portfolio website to display photography, illustration, and film."
-            technologies={['React.js', 'Next.js', 'AWS S3']}
+            technologies={['React.js', 'Next.js', 'Django', 'Stripe']}
             website="https://www.briannahaferman.com"
             dialogId="bkh-dialog"
             coverImg="./img/bkh_card.png"
@@ -102,7 +102,7 @@ export default function Home() {
           <ProjectCard
             title="Boone UAS"
             img="./img/booneuas_website.png"
-            description="Website for Drone imaging business."
+            description="Website for Boone UAS Drone services."
             technologies={['React.js', 'Next.js']}
             website="https://www.booneuasdrones.com"
             dialogId="booneuas-dialog"
@@ -110,47 +110,49 @@ export default function Home() {
             coverAlt="Boone UAS"
           />
           <ProjectCard
-            title="Piedmont Legacy Trails"
-            img="./img/plt_website.jpg"
+            title="NC Triad Trails Map"
+            img="./img/trails_map_website.png"
             description="Interactive map of trails in the Piedmont region of North Carolina."
-            technologies={['Node.js', 'Express', 'MongoDB', 'MapBox']}
-            website="https://www.piedmontlegacytrails.org"
-            dialogId="plt-dialog"
-            coverImg="./img/plt_card.png"
-            coverAlt="Piedmont Legacy Trails"
+            technologies={['Javascript', 'MapBox']}
+            website="https://plt-map.vercel.app/"
+            dialogId="plt-map-dialog"
+            coverImg="./img/trails_map_card.png"
+            coverAlt="NC Triad Trails Map"
           />
           <ProjectCard
             title="Wedding App"
             img="./img/wedding_app.mp4"
             description="Flutter app for my wedding trip with Bingo, Quiz, and more."
             technologies={['Dart', 'Flutter']}
-            website=""
+            website="https://github.com/jeodell/wedding-bingo"
             dialogId="wedding-dialog"
             coverImg="./img/wedding_app_card.png"
             coverAlt="Wedding App"
             isVideo={true}
             isPortrait={true}
+            isCodeOnly={true}
           />
           <ProjectCard
-            title="Piedmont Legacy Trails Map"
-            img="./img/plt_map.png"
-            description="Interactive map of trails in the Piedmont region of North Carolina."
-            technologies={['Javascript', 'MapBox']}
-            website="https://jeodell.github.io/PiedmontLegacyTrailsMap/"
-            dialogId="plt-map-dialog"
-            coverImg="./img/plt_map_card.png"
-            coverAlt="Piedmont Legacy Trails Map"
+            title="Piedmont Legacy Trails Website"
+            img="./img/plt_website.jpg"
+            description="Redesign of the Piedmont Legacy Trails WordPress website."
+            technologies={['WordPress']}
+            website="https://www.piedmontlegacytrails.org"
+            dialogId="plt-dialog"
+            coverImg="./img/plt_card.png"
+            coverAlt="Piedmont Legacy Trails"
           />
           <ProjectCard
             title="Spotify New Releases"
             img="./img/spotify_website.mp4"
             description="View the most recent albums released by your followed artists on Spotify."
             technologies={['React', 'Node.js', 'Express']}
-            website="https://jeodell.github.io/SpotifyNewReleases/"
+            website="https://github.com/jeodell/SpotipyNewReleases"
             dialogId="spotify-dialog"
             coverImg="./img/spotify_card.png"
             coverAlt="Spotify New Releases"
             isVideo={true}
+            isCodeOnly={true}
           />
         </div>
       </section>
