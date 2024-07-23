@@ -62,7 +62,12 @@ export default function ProjectCardDialog(props: ProjectCardDialogProps) {
             <h3 className="text-lg font-semibold">{props.title}</h3>
             <p className="text-center">{props.description}</p>
             <p className="text-center">Technologies Used: {props.technologies.join(' | ')}</p>
-            <a href={props.website} target="_blank" rel="noopener noreferrer" className="">
+            <a
+              href={props.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="focus:outline-none focus:ring-2 focus:ring-jo-dark"
+            >
               View Website
             </a>
           </div>
@@ -80,7 +85,12 @@ export default function ProjectCardDialog(props: ProjectCardDialogProps) {
             <h3 className="text-lg font-semibold">{props.title}</h3>
             <p className="text-center">{props.description}</p>
             <p className="text-center">Technologies Used: {props.technologies.join(' | ')}</p>
-            <a href={props.website} target="_blank" rel="noopener noreferrer" className="">
+            <a
+              href={props.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="focus:outline-none focus:ring-2 focus:ring-jo-dark"
+            >
               View Website
             </a>
           </div>

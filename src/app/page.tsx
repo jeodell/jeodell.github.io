@@ -20,7 +20,7 @@ export default function Home() {
                 <p className="my-2 text-2xl">Full Stack Developer from North Carolina</p>
                 <div className="mb-6 mt-2 flex flex-col items-start justify-center md:flex-row md:space-x-8">
                   <a
-                    className="flex items-center hover:underline"
+                    className="dark:focus-zinc-200 flex items-center hover:underline focus:outline-none focus:ring-2 focus:ring-jo-dark dark:focus:ring-zinc-200"
                     href="https://www.linkedin.com/in/jasoneodell"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -29,7 +29,7 @@ export default function Home() {
                     linkedin.com/in/jasoneodell
                   </a>
                   <a
-                    className="flex items-center hover:underline"
+                    className="dark:focus-zinc-200 flex items-center hover:underline focus:outline-none focus:ring-2 focus:ring-jo-dark dark:focus:ring-zinc-200"
                     href="https://www.github.com/jeodell"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -60,7 +60,7 @@ export default function Home() {
                     href="./img/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mx-auto rounded-full bg-jo-light px-6 py-3 text-center text-zinc-200 hover:bg-jo-light/90 dark:bg-jo-medium dark:hover:bg-jo-medium/80"
+                    className="mx-auto rounded-full bg-jo-light px-6 py-3 text-center text-zinc-200 hover:bg-jo-light/90 focus:outline-none focus:outline-jo-light focus:ring-2 focus:ring-zinc-200 dark:bg-jo-medium dark:hover:bg-jo-medium/80 dark:focus:ring-zinc-200"
                   >
                     View Resume
                   </a>

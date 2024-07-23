@@ -10,14 +10,24 @@ export default function Footer() {
           <HomeIcon className="mr-2 h-4 w-4" />
           North Carolina
         </p>
-        <a className="flex items-center justify-center hover:underline" href="mailto:jasoneodell@gmail.com">
-          <EnvelopeIcon className="mr-2 h-4 w-4" />
-          jasoneodell@gmail.com
-        </a>
-        <a className="flex items-center justify-center hover:underline" href="tel:+13364037837">
-          <PhoneIcon className="mr-2 h-4 w-4" />
-          (336) 403-7837
-        </a>
+        <div className="flex items-center justify-center">
+          <a
+            className="flex items-center hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-200"
+            href="mailto:jasoneodell@gmail.com"
+          >
+            <EnvelopeIcon className="mr-2 h-4 w-4" />
+            jasoneodell@gmail.com
+          </a>
+        </div>
+        <div className="flex items-center justify-center">
+          <a
+            className="flex items-center hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-200"
+            href="tel:+13364037837"
+          >
+            <PhoneIcon className="mr-2 h-4 w-4" />
+            (336) 403-7837
+          </a>
+        </div>
       </div>
       <div className="text-center">
         <p>© {new Date().getFullYear()} Copyright Jason O&apos;Dell</p>

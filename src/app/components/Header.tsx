@@ -2,7 +2,6 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import '../globals.css'
 import ThemeToggle from '../theme'
-import InProgressBanner from './InProgressBanner'
 
 const navigation = [
   { name: 'Skills', href: '#skills', current: false },
@@ -13,7 +12,7 @@ const navigation = [
 export default function Header() {
   return (
     <>
-      <Disclosure as="nav" className="dark:bg-jo-medium bg-jo-light text-zinc-200">
+      <Disclosure as="nav" className="bg-jo-light text-zinc-200 dark:bg-jo-medium">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-20 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -33,7 +32,7 @@ export default function Header() {
                       key={item.name}
                       href={item.href}
                       aria-current={item.current ? 'page' : undefined}
-                      className="text-md dark:bg-jo-medium rounded-md px-3 py-2 font-medium hover:underline dark:hover:text-zinc-50"
+                      className="text-md rounded-md px-3 py-2 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-zinc-200 dark:bg-jo-medium dark:hover:text-zinc-50"
                     >
                       {item.name}
                     </a>
@@ -53,7 +52,7 @@ export default function Header() {
                 as="a"
                 href={item.href}
                 aria-current={item.current ? 'page' : undefined}
-                className="dark:bg-jo-medium block rounded-md bg-jo-light px-3 py-2 text-base font-medium text-zinc-200 hover:underline"
+                className="block rounded-md bg-jo-light px-3 py-2 text-base font-medium text-zinc-200 hover:underline dark:bg-jo-medium"
               >
                 {item.name}
               </DisclosureButton>
@@ -61,7 +60,7 @@ export default function Header() {
           </div>
         </DisclosurePanel>
       </Disclosure>
-      <InProgressBanner />
+      {/* <InProgressBanner /> */}
     </>
   )
 }

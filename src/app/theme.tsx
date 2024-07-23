@@ -26,7 +26,7 @@ export default function ThemeToggle() {
   }, [darkMode])
 
   return (
-    <button onClick={() => setDarkMode(!darkMode)}>
+    <button className="focus:outline-none focus:ring-2 focus:ring-zinc-200" onClick={() => setDarkMode(!darkMode)}>
       {darkMode ? <SunIcon className="h-6 w-6 text-zinc-200" /> : <MoonIcon className="h-6 w-6 text-zinc-200" />}
     </button>
   )

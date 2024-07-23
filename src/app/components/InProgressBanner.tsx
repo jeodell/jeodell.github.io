@@ -12,7 +12,7 @@ export default function InProgressBanner() {
           <div className="order-2 mt-2 sm:order-3 sm:mt-0">
             <a
               href="#contact"
-              className="flex items-center justify-center rounded-md border border-transparent bg-zinc-50 px-4 py-2 text-sm font-medium text-yellow-500 shadow-sm hover:bg-yellow-50"
+              className="flex items-center justify-center rounded-md border border-transparent bg-zinc-50 px-4 py-2 text-sm font-medium text-yellow-500 shadow-sm hover:bg-yellow-50 focus:outline-none focus:ring-2 focus:ring-jo-dark"
             >
               Contact me
             </a>
