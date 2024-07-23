@@ -60,7 +60,7 @@ export default function Home() {
                     href="./img/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="dark:bg-jo-medium dark:hover:bg-jo-medium/80 mx-auto rounded-full bg-jo-light px-6 py-3 text-center text-zinc-200 hover:bg-jo-light/90"
+                    className="mx-auto rounded-full bg-jo-light px-6 py-3 text-center text-zinc-200 hover:bg-jo-light/90 dark:bg-jo-medium dark:hover:bg-jo-medium/80"
                   >
                     View Resume
                   </a>
@@ -126,7 +126,7 @@ export default function Home() {
             technologies={['Dart', 'Flutter']}
             website=""
             dialogId="wedding-dialog"
-            coverImg="./img/wedding_card.png"
+            coverImg="./img/wedding_app_card.png"
             coverAlt="Wedding App"
             isVideo={true}
             isPortrait={true}
@@ -155,7 +155,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="dark:bg-jo-medium bg-jo-light py-10 text-zinc-200">
+      <section id="contact" className="bg-jo-light py-10 text-zinc-200 dark:bg-jo-medium">
         <Footer />
       </section>
     </main>
