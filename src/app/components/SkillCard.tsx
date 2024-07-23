@@ -35,9 +35,9 @@ export default function SkillCard(props: SkillCardProps) {
   }
 
   return (
-    <div className="dark:bg-jo-medium rounded-lg bg-jo-light p-4 shadow-md">
-      <h3 className="mb-6 mt-2 text-center text-xl font-semibold">{props.title}</h3>
-      <ul className="mb-8 space-y-1 px-8">
+    <div className="rounded-lg bg-jo-light p-4 shadow-md dark:bg-jo-medium">
+      <h3 className="mb-4 mt-2 text-center text-xl font-semibold">{props.title}</h3>
+      <ul className="mb-6 space-y-1 px-6">
         {props.skills.map((skill) => (
           <li key={skill}>
             <span className="flex items-center">
