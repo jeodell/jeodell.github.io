@@ -1,11 +1,14 @@
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import type { Metadata } from 'next'
-import { Bitter, Cormorant } from 'next/font/google'
+import { Bitter } from 'next/font/google'
 import Header from './components/Header'
 import './globals.css'
 
 import { classNames } from './helper/helper'
 
-const cormorant = Cormorant({ subsets: ['latin'] })
+config.autoAddCss = false /* fix fontawesome icons starting out large */
+
 const bitter = Bitter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
