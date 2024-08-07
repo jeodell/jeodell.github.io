@@ -55,7 +55,7 @@ export default function Home() {
                     and more below.
                   </p>
                 </div>
-                <div className="mt-4 flex max-w-4xl self-start lg:px-16">
+                <div className="mt-4 flex max-w-4xl lg:px-16">
                   <a
                     href="./img/resume.pdf"
                     target="_blank"
