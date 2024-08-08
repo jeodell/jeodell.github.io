@@ -1,7 +1,9 @@
+import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 
 interface ProjectCardDialogProps {
   img: string
+  alt: string
   title: string
   description: string
   technologies: string[]
@@ -56,7 +58,7 @@ export default function ProjectCardDialog(props: ProjectCardDialogProps) {
             {props.isVideo ? (
               <video src={props.img} className="max-h-96" controls autoPlay muted />
             ) : (
-              <img src={props.img} width="100%" height="100%" />
+              <Image className="w-full" src={props.img} alt={props.alt} width={800} height={400} />
             )}
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -80,7 +82,7 @@ export default function ProjectCardDialog(props: ProjectCardDialogProps) {
             {props.isVideo ? (
               <video src={props.img} className="max-h-96" controls autoPlay muted />
             ) : (
-              <img src={props.img} width="100%" height="100%" />
+              <Image className="w-full" src={props.img} alt={props.alt} width={800} height={400} />
             )}
           </div>
           <div className="flex flex-col items-center justify-center">

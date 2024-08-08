@@ -1,6 +1,7 @@
 'use client'
 
 import { CodeBracketIcon, UserCircleIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 import Footer from './components/Footer'
 import ProjectCard from './components/ProjectCard'
 import SkillCard from './components/SkillCard'
@@ -13,7 +14,7 @@ export default function Home() {
       <section id="intro" className="container mx-auto my-8 p-4">
         <div className="flex items-center justify-center">
           <div className="mx-auto my-8">
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col space-y-12 lg:flex-row lg:space-y-0">
               <div className="flex flex-col items-center justify-center text-center lg:w-3/4">
                 <h1 className="my-2 text-4xl font-bold">Jason O&apos;Dell</h1>
                 <hr className="my-4 w-24 border-t-2 border-gray-700 dark:border-zinc-200" />
@@ -55,19 +56,19 @@ export default function Home() {
                     and more below.
                   </p>
                 </div>
-                <div className="mt-4 flex max-w-4xl lg:px-16">
+                <div className="mt-6 flex max-w-4xl lg:px-16">
                   <a
-                    href="./img/resume.pdf"
+                    href="/img/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mx-auto rounded-full bg-jo-light px-6 py-2 text-center text-zinc-200 hover:bg-jo-light/90 focus:outline-none focus:outline-jo-light focus:ring-2 focus:ring-zinc-200 dark:bg-jo-medium dark:hover:bg-jo-medium/80 dark:focus:ring-zinc-200"
+                    className="mx-auto rounded-full bg-jo-light px-6 py-3 text-center text-zinc-200 hover:bg-jo-light/90 focus:outline-none focus:outline-jo-light focus:ring-1 focus:ring-zinc-200 dark:border-2 dark:border-zinc-200/75 dark:bg-jo-medium dark:hover:bg-jo-medium/80 dark:focus:ring-zinc-200"
                   >
                     View Resume
                   </a>
                 </div>
               </div>
               <div className="mx-auto mb-0 mt-8 flex w-3/4 items-center sm:w-1/2 lg:my-4 lg:w-1/4">
-                <img src="./img/jason.jpg" alt="Jason O'Dell" />
+                <Image src="/img/jason.jpg" alt="Jason O'Dell" width={400} height={500} />
               </div>
             </div>
           </div>
@@ -91,42 +92,46 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
             title="Brianna Haferman Photography"
-            img="./img/bkh_website.png"
+            img="/img/bkh_website.png"
+            imgAlt="Brianna Haferman Photography website"
             description="Creative media portfolio website to display photography, illustration, and film."
             technologies={['React.js', 'Next.js', 'Django', 'Stripe']}
             website="https://www.briannahaferman.com"
             dialogId="bkh-dialog"
-            coverImg="./img/bkh_card.png"
+            coverImg="/img/bkh_card.png"
             coverAlt="Brianna Haferman Photography"
           />
           <ProjectCard
             title="Boone UAS"
-            img="./img/booneuas_website.png"
+            img="/img/booneuas_website.png"
+            imgAlt="Boone UAS Drone Services website"
             description="Website for Boone UAS Drone services."
             technologies={['React.js', 'Next.js']}
             website="https://www.booneuasdrones.com"
             dialogId="booneuas-dialog"
-            coverImg="./img/booneuas_card.png"
+            coverImg="/img/booneuas_card.png"
             coverAlt="Boone UAS"
           />
           <ProjectCard
-            title="NC Triad Trails Map"
-            img="./img/trails_map_website.png"
+            title="Piedmont Legacy Trails Map"
+            img="/img/trails_map_website.png"
+            imgAlt="Piedmont Legacy Trails Map website"
             description="Interactive map of trails in the Piedmont region of North Carolina."
             technologies={['Javascript', 'MapBox']}
             website="https://plt-map.vercel.app/"
             dialogId="plt-map-dialog"
-            coverImg="./img/trails_map_card.png"
-            coverAlt="NC Triad Trails Map"
+            coverImg="/img/trails_map_card.png"
+            coverAlt="Piedmont Legacy Trails Map"
           />
           <ProjectCard
             title="Wedding App"
-            img="./img/wedding_app.mp4"
+            img="/img/wedding_app.mp4"
+            imgAlt="Wedding App demo video"
             description="Flutter app for my wedding trip with Bingo, Quiz, and more."
             technologies={['Dart', 'Flutter']}
             website="https://github.com/jeodell/wedding-bingo"
             dialogId="wedding-dialog"
-            coverImg="./img/wedding_app_card.png"
+            coverImg="/img/wedding_app_card.png"
             coverAlt="Wedding App"
             isVideo={true}
             isPortrait={true}
@@ -134,22 +139,24 @@ export default function Home() {
           />
           <ProjectCard
             title="Piedmont Legacy Trails Website"
-            img="./img/plt_website.jpg"
+            img="/img/plt_website.jpg"
+            imgAlt="Piedmont Legacy Trails WordPress website"
             description="Redesign of the Piedmont Legacy Trails WordPress website."
             technologies={['WordPress']}
             website="https://www.piedmontlegacytrails.org"
             dialogId="plt-dialog"
-            coverImg="./img/plt_card.png"
+            coverImg="/img/plt_card.png"
             coverAlt="Piedmont Legacy Trails"
           />
           <ProjectCard
             title="Spotify New Releases"
-            img="./img/spotify_website.mp4"
+            img="/img/spotify_website.mp4"
+            imgAlt="Spotify New Releases demo video"
             description="View the most recent albums released by your followed artists on Spotify."
             technologies={['React', 'Node.js', 'Express']}
             website="https://github.com/jeodell/SpotipyNewReleases"
             dialogId="spotify-dialog"
-            coverImg="./img/spotify_card.png"
+            coverImg="/img/spotify_card.png"
             coverAlt="Spotify New Releases"
             isVideo={true}
             isCodeOnly={true}

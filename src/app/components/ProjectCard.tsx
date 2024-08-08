@@ -1,8 +1,10 @@
+import Image from 'next/image'
 import ProjectCardDialog from './ProjectCardDialog'
 
 interface ProjectCardProps {
   title: string
   img: string
+  imgAlt: string
   description: string
   technologies: string[]
   website: string
@@ -25,7 +27,13 @@ export default function ProjectCard(props: ProjectCardProps) {
 
   return (
     <div className="group relative">
-      <img src={props.coverImg} className="w-full rounded-lg shadow-md" alt={props.coverAlt} />
+      <Image
+        src={props.coverImg}
+        className="w-full rounded-lg shadow-md"
+        alt={props.coverAlt}
+        width={500}
+        height={350}
+      />
       <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-50 opacity-0 transition-opacity group-hover:opacity-100 group-focus:opacity-100">
         <button
           className="rounded-full bg-jo-light px-6 py-2 text-zinc-200 focus:outline-none focus:outline-jo-light focus:ring-2 focus:ring-zinc-200"
@@ -35,6 +43,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         </button>
         <ProjectCardDialog
           img={props.img}
+          alt={props.imgAlt}
           title={props.title}
           description={props.description}
           technologies={props.technologies}
