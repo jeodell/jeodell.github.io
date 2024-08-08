@@ -51,7 +51,7 @@ export default function Home() {
                     I believe my strengths are my versatility (from wearing many hats at VitalFlo), communication
                     skills, and eagerness to learn more about the field. In my spare time, I&apos;ve also completed many
                     personal projects. Some of my favorites are a Flutter app for my wedding trip (including Bingo, a
-                    quiz, and more), photography and drone websites for friends, an interactive trails map, and a
+                    quiz, and more), photography and drone websites for friends, interactive trails/blueways maps, and a
                     Spotify Web App to show you your followed artists&apos; recent releases. You can see all of those
                     and more below.
                   </p>
@@ -113,15 +113,15 @@ export default function Home() {
             coverAlt="Boone UAS"
           />
           <ProjectCard
-            title="Piedmont Legacy Trails Map"
-            img="/img/trails_map_website.png"
+            title="Piedmont Legacy Trails Blueways Map"
+            img="/img/blueways_map_website.png"
             imgAlt="Piedmont Legacy Trails Map website"
-            description="Interactive map of trails in the Piedmont region of North Carolina."
+            description="Interactive map of blueways in the Piedmont region of North Carolina."
             technologies={['Javascript', 'MapBox']}
             website="https://plt-map.vercel.app/"
             dialogId="plt-map-dialog"
-            coverImg="/img/trails_map_card.png"
-            coverAlt="Piedmont Legacy Trails Map"
+            coverImg="/img/blueways_map_card.png"
+            coverAlt="Piedmont Legacy Trails Blueways Map"
           />
           <ProjectCard
             title="Wedding App"
