@@ -1,10 +1,7 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
-  output: 'export',
-  images: {
-    domains: ['tailwindui.com', 'images.unsplash.com'],
-  },
+  output: isProd ? 'export' : 'standalone',
 }
 
 export default nextConfig
