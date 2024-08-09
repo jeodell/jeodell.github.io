@@ -47,7 +47,7 @@ export default function ProjectCardDialog(props: ProjectCardDialogProps) {
 
   return (
     <dialog
-      className="mx-auto my-auto w-2/3 rounded-lg bg-white p-8 backdrop:bg-jo-dark/50 backdrop:backdrop-blur-sm dark:bg-jo-dark"
+      className="mx-auto my-auto w-2/3 rounded-lg bg-white p-8 backdrop:bg-jo-dark/50 backdrop:backdrop-blur-sm dark:bg-jo-dark dark:ring-2 dark:ring-jo-light/75"
       id={props.dialogId}
       aria-hidden="true"
       ref={dialogRef}
