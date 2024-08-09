@@ -117,8 +117,8 @@ export default function Home() {
             img="/img/blueways_map_website.png"
             imgAlt="Piedmont Legacy Trails Map website"
             description="Interactive map of blueways in the Piedmont region of North Carolina."
-            technologies={['Javascript', 'MapBox']}
-            website="https://plt-map.vercel.app/"
+            technologies={['HTML', 'CSS', 'Javascript', 'MapBox']}
+            website="https://plt-blueways-map.vercel.app/"
             dialogId="plt-map-dialog"
             coverImg="/img/blueways_map_card.png"
             coverAlt="Piedmont Legacy Trails Blueways Map"
