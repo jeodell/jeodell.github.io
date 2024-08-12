@@ -143,7 +143,7 @@ export default function Home() {
             imgAlt="Piedmont Legacy Trails WordPress website"
             description="Redesign of the Piedmont Legacy Trails WordPress website."
             technologies={['WordPress']}
-            website="https://www.piedmontlegacytrails.org"
+            website="https://www.piedmonttrails.org"
             dialogId="plt-dialog"
             coverImg="/img/plt_card.png"
             coverAlt="Piedmont Legacy Trails"
