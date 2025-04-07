@@ -91,6 +91,17 @@ export default function Home() {
         <h2 className="mb-8 text-center text-4xl">Projects</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
+            title="Metapages"
+            img="/img/metapages_website.png"
+            imgAlt="Metapages website"
+            description="Shareable embeddable scientific workflows in the browser"
+            technologies={['React.js', 'GraphQL', 'Nhost', 'Typesense', 'Stripe']}
+            website="https://metapage.io"
+            dialogId="metapages-dialog"
+            coverImg="/img/metapages_card.png"
+            coverAlt="Metapages"
+          />
+          <ProjectCard
             title="Brianna Haferman Photography"
             img="/img/bkh_website.png"
             imgAlt="Brianna Haferman Photography website"
